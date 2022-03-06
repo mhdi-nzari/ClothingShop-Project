@@ -1,0 +1,143 @@
+
+<section>
+  <div class="container comments-container"> 
+    <div class="row">
+      <div class="col-12">
+        <div class="add-comments">
+          <h3 class="titles-section">نظرات کاربران</h3>
+          <form class="validate-form form-card">
+            <div class="row m-0">
+              <div class="col-md-6 col-12">
+                <div class="form-card__field">
+                  <label class="form-card__label" for="name">نام</label>
+                  <input class="form-card__input" type="text" required="" name="name" placeholder="نام و نام خانوادگی" id="name"/>
+                </div>
+                <div class="form-card__field">
+                  <label class="form-card__label" for="email">ایمیل</label>
+                  <input class="form-card__input" type="text" required="" name="email" placeholder="ایمیل" id="email"/>
+                </div>
+                <div class="form-card__field">
+                  <label class="form-card__label">کد امنیتی</label>
+                  <input class="form-card__input" id="captcha" type="text" name="securityCode" placeholder="کد امنیتی را وارد کنید." autocomplete="off" required="required"/>
+                  <div class="captcha"><a class="captcha__link" href="#"><span class="icon-reload"></span></a><img class="captcha__img" title="Captcha" src="http://www.bazzarbeauty.com/captcha/default?Ovyr7qqP" alt="کد امنیتی" required="required"/></div>
+                </div>
+                <div class="form-card__field pros">
+                  <label class="form-card__label">نقاط قوت</label>
+                  <input class="form-card__input pros__input" id="recipient-Strength" type="text" placeholder="نقاط قوت"/>
+                  <button class="pros__button"><span class="icon-plus-circle"></span></button>
+                </div>
+                <div class="pros__wrapper">
+                  <ul class="pros__list"></ul>
+                </div>
+                <div class="form-card__field cons">
+                  <label class="form-card__label">نقاط ضعف</label>
+                  <input class="form-card__input cons__input" id="recipient-Weakness" type="text" placeholder="نقاط ضعف "/>
+                  <button class="cons__button"><span class="icon-plus-circle"></span></button>
+                </div>
+                <div class="cons__wrapper">
+                  <ul class="cons__list">       </ul>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="form-card__field">
+                  <label class="form-card__label">متن </label>
+                  <textarea class="form-card__input" rows="7" placeholder="متن نقد و بررسی شما"></textarea>
+                </div>
+                <div class="checkbox-wrapper">
+                  <div class="checkbox bounce">
+                    <input id="c-1" type="radio" name="productgroup" value="22"/>
+                    <svg viewBox="0 0 21 21">
+                      <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                    </svg>
+                  </div>
+                  <label class="checkbox-label" for="c-1">این محصول را پیشنهاد می کنم</label>
+                </div>
+                <div class="checkbox-wrapper">
+                  <div class="checkbox bounce">
+                    <input id="c-2" type="radio" name="productgroup" value="22"/>
+                    <svg viewBox="0 0 21 21">
+                      <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                    </svg>
+                  </div>
+                  <label class="checkbox-label" for="c-2">این محصول را پیشنهاد نمی کنم</label>
+                </div>
+              </div>
+              <div class="col-12 form-card__button">
+                <button type="submit">ثبت نظر</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-12">
+        <ul class="comments">
+          <li class="comments__container">
+            <div class="comments__header"><i class="icon-message-square"></i>
+              <div class="comments__user">
+                <p>علیرضا حاجی قدیری راوندی</p>
+                <time datetime="2008-02-14 20:00">26 اردبیهشت 1395</time>
+              </div>
+              <div class="comments__like">
+                <form class="like-form">
+                  <input type="hidden"/><span class="likeform__counter">۰</span>
+                  <button class="like-form__button"><span class="icon-heart"></span></button>
+                </form>
+              </div>
+            </div>
+            <div class="comments__body">
+              <article>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیستری را برای طراحان رایانه ای و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</article>
+              <div class="comments__property">
+                <div class="comments__property--positive"><span>نقاط قوت</span>
+                  <ul class="comments__property-list">
+                    <li class="comments__property-item">کیفیت مناسب</li>
+                    <li class="comments__property-item">کیفیت مناسب</li>
+                    <li class="comments__property-item">کیفیت مناسب</li>
+                  </ul>
+                </div>
+                <div class="comments__property--negative"><span>نقاط ضعف</span>
+                  <ul class="comments__property-list">
+                    <li class="comments__property-item">نداشت</li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div class="comments__recommend comments__recommend--positive"><span class="icon-like"></span>خرید این محصول را توصیه می‌کنم</div>
+                <div class="d-none comments__recommend comments__recommend--negative"><span class="icon-dislike"></span>خرید این محصول را توصیه نمی‌کنم</div>
+              </div>
+              <ul class="comments">
+                <li class="comments__container">
+                  <div class="comments__header"><i class="icon-message-square"></i>
+                    <div class="comments__user">
+                      <p>سید ابوالفضل طباطبایی</p>
+                      <time datetime="2008-02-14 20:00">26 اردبیهشت 1395</time>
+                    </div>
+                  </div>
+                  <div class="comments__body comments__body--replay">
+                    <article>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</article>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="comments__container">
+            <div class="comments__header"><i class="icon-message-square"></i>
+              <div class="comments__user">
+                <p>علیرضا حاجی قدیری راوندی</p>
+                <time datetime="2008-02-14 20:00">26 اردبیهشت 1395    </time>
+              </div>
+              <div class="comments__like">
+                <form class="like-form">
+                  <input type="hidden"/><span class="likeform__counter">۰</span>
+                  <button class="like-form__button"><span class="icon-heart"></span></button>
+                </form>
+              </div>
+            </div>
+            <div class="comments__body">
+              <article>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیستری را برای طراحان رایانه ای و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</article>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,32 @@
+.textPage {
+    margin-top: 1.5rem;
+    margin-bottom: 13rem;
+    div {
+        line-height: 1.8;
+        font-size: 1.4rem;
+        color: #444;
+        text-align: justify;
+    }
+}
+
+.suggestion {
+    &__text {
+        p {
+            font-size: 1.4rem;
+            color: #444;
+            line-height: 2;
+            text-align: justify;
+        }
+    }
+    &__form {
+        @include d-flex;
+        justify-content: center;
+    }
+    .form-card {
+        width: 80%;
+        @include media-md {
+            width: 98%;
+        }
+    }
+    margin-bottom: 10rem;
+}

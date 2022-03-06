@@ -1,0 +1,212 @@
+.modal {
+    z-index: 999999999;
+}
+
+.modal-backdrop.show {
+    opacity: 0.8;
+}
+
+.login {
+    .modal-header {
+        border: none;
+    }
+    .close {
+        position: absolute;
+        right: 5px;
+        @include transition();
+        color: white;
+        margin: -1rem auto -1rem -1rem !important;
+        font-size: 1.7rem;
+    }
+    .modal-dialog {
+        max-width: 320px;
+    }
+    &__wrapper,
+    .modal-content {
+        @include d-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: none;
+        width: 320px;
+        height: 400px;
+        background: inherit;
+        position: absolute;
+        overflow: hidden;
+        @include border-radius();
+        &::before {
+            width: 380px;
+            height: 444px;
+            content: "";
+            z-index: -1;
+            position: absolute;
+            top: -25px;
+            right: -16px;
+            bottom: 0;
+            background: inherit;
+            box-shadow: inset 0 0 0 200px rgba(79, 79, 79, 0.65);
+            filter: blur(10px);
+        }
+    }
+    .modal-body {
+        @include d-flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .form-card__field:first-child {
+        margin-top: 10px;
+    }
+    .form-card__label {
+        color: white;
+    }
+    &__icon-wrapper {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        margin-bottom: 0rem;
+        @include border-radius( 50%);
+        background-color: #d3d3d37a;
+        @include flexrow-center;
+    }
+    &__icon {
+        font-size: 5.5rem;
+        color: white;
+    }
+    &__line {
+        margin: 2rem 0;
+        width: 100%;
+        position: relative;
+        &::after,
+        &::before {
+            top: 50%;
+            content: '';
+            width: 35%;
+            position: absolute;
+            height: 1px;
+            background-color: rgb(156, 156, 156);
+        }
+        &::after {
+            left: 15px;
+        }
+        &::before {
+            right: 15px;
+        }
+    }
+    &__line-text {
+        text-align: center;
+        color: white;
+        cursor: default;
+        font-size: 1.5rem;
+    }
+    &__return {
+        width: 100%;
+        @include d-flex;
+        justify-content: flex-start;
+    }
+    &__return-btn {
+        margin-bottom: 10px;
+        color: #a8a8a8;
+        font-size: 1.1rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        @include d-flex;
+        align-items: center;
+        @include transition();
+        &::before {
+            font-family: 'icomoon';
+            content: $angle-right;
+            margin-#{$left}: 3px;
+            font-size: 0.7rem;
+        }
+        &:hover {
+            color: white;
+        }
+    }
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__social {
+        background: inherit;
+        border: none;
+        font-size: 1.4rem;
+        color: #b9b9b9;
+        @include flexrow-center;
+        @include transition();
+        width: 100%;
+        cursor: pointer;
+        span {
+            margin-#{$left}: 10px;
+        }
+        &:hover {
+            color: white;
+        }
+    }
+    &__link-wrapper {
+        @include d-flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        line-height: 2;
+    }
+    &__text {
+        font-size: 1.3rem;
+        color: #eeee;
+        text-align: center;
+        cursor: default;
+        margin: 1.1rem 0;
+    }
+    &__resend {
+        @include flexrow-center;
+        button,
+        a {
+            @include border-radius();
+            font-size: 1.3rem;
+            color: #eeee;
+            background: inherit;
+            border: 1px solid #eeee;
+            cursor: pointer;
+            padding: 6px 13px;
+        }
+    }
+    &__link {
+        font-size: 1.3rem;
+        color: #b9b9b9;
+        line-height: 1.8;
+        @include d-flex;
+        @include transition();
+        width: 100%;
+        span {
+            margin-#{$left}: 10px;
+        }
+        &:hover {
+            color: white;
+        }
+    }
+    &__confirm {
+        margin: 20px 0 10px;
+        width: 100%;
+        font-size: 1.4rem;
+        padding: 6px 0;
+        border: none;
+        color: white;
+        background-color: rgba(177, 177, 177, 0.64);
+        @include border-radius();
+        @include transition();
+        cursor: pointer;
+        &:hover {
+            background-color: rgba(177, 177, 177, 1);
+        }
+    }
+}
+
+.login-page {
+    height: 100vh;
+    background: #fef3de;
+    background: linear-gradient(189deg, #fef3de 0%, $color-base-hover 49%, $color-base 80%);
+    .login__wrapper {
+        position: relative;
+        z-index: 50;
+    }
+}

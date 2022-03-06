@@ -1,0 +1,97 @@
+.filter-search.mt-2
+    span.filter-search__label جستجو :
+    form.filter-search__form
+        .filter-search__field
+            input.form-control(type="text" placeholder="اینجا جستجو کنید...")
+        button.filter-search__submit(type="submit")
+            span.icon-search
+#main-accordion1.filter-accordion
+    .filter-accordion__item
+        h5.filter-accordion__header
+            button.filter-accordion__button.collapsed(data-toggle="collapse" data-target="#group-collapse-dd" aria-expanded="false")
+                | فیلتر براساس ناشر           
+                span.icon-angle-down.filter-accordion__icon
+        #group-collapse-dd.collapse.show(data-parent="#main-accordion1")
+            .row
+                .col-12.filter-accordion__body-item
+                    .checkbox.bounce
+                        input(type='checkbox')#input_1
+                        svg(viewBox='0 0 21 21')
+                            polyline(points='5 10.75 8.5 14.25 16 6')
+                    label.checkbox-label(for="input_1") پاشا باغچه            
+                .col-12.filter-accordion__body-item
+                    .checkbox.bounce
+                        input#input_2(type='checkbox')
+                        svg(viewBox='0 0 21 21')
+                            polyline(points='5 10.75 8.5 14.25 16 6')
+                    label.checkbox-label(for="input_2") پاشا باغچه           
+                .col-12.filter-accordion__body-item
+                    .checkbox.bounce
+                        input#input_3(type='checkbox')
+                        svg(viewBox='0 0 21 21')
+                            polyline(points='5 10.75 8.5 14.25 16 6')
+                    label.checkbox-label(for="input_3") پاشا باغچه           
+                .col-12.filter-accordion__body-item
+                    .checkbox.bounce
+                        input#input_4(type='checkbox')
+                        svg(viewBox='0 0 21 21')
+                            polyline(points='5 10.75 8.5 14.25 16 6')
+                    label.checkbox-label(for="input_4") پاشا باغچه      
+                .col-12.filter-accordion__body-item
+                    .checkbox.bounce
+                        input#input_5(type='checkbox')
+                        svg(viewBox='0 0 21 21')
+                            polyline(points='5 10.75 8.5 14.25 16 6')
+                    label.checkbox-label(for="input_5") پاشا باغچه
+    include _range-slider
+    .filter-accordion__item
+        h5.filter-accordion__header
+            button.filter-accordion__button.collapsed(data-toggle='collapse', data-target='#collapse-color', aria-expanded='false')
+                | رنگ بندی
+                span.icon-angle-down.filter-accordion__icon
+        #collapse-color.collapse(role='tabpanel', data-parent='#main-accordion')
+            form.color
+                fieldset.color__field
+                    div
+                        input.color__input#red(type='checkbox')
+                        label.color__label(data-toggle='tooltip', data-placement='top', title='red', for='red')
+                            span
+                    div
+                        input.color__input#blue(type='checkbox')
+                        label.color__label(data-toggle='tooltip', data-placement='top', title='blue', for='blue')
+                            span
+                    div
+                        input.color__input#black(type='checkbox')
+                        label.color__label(data-toggle='tooltip', data-placement='top', title='black', for='black')
+                            span
+                    div
+                        input.color__input#orange(type='checkbox')
+                        label.color__label(data-toggle='tooltip', data-placement='top', title='orange', for='orange')
+                            span
+                    div
+                        input.color__input#pink(type='checkbox')
+                        label.color__label(data-toggle='tooltip', data-placement='top', title='pink', for='pink')
+                            span
+            .moreitem
+                #more-filter1.in.collapse
+                    form.color
+                        fieldset.color__field
+                            div
+                                input.color__input#grey(type='checkbox')
+                                label.color__label(data-toggle='tooltip', data-placement='top', title='grey', for='grey')
+                                    span
+                            div
+                                input.color__input#darkgrey(type='checkbox')
+                                label.color__label(data-toggle='tooltip', data-placement='top', title='darkgrey', for='darkgrey')
+                                    span
+                            div
+                                input.color__input#lightgrey(type='checkbox')
+                                label.color__label(data-toggle='tooltip', data-placement='top', title='lightgrey', for='lightgrey')
+                                    span
+                a.more-button.up-down.collapsed(href='#more-filter1', data-toggle='collapse', aria-expanded='false')
+                    | نمایش بیشتر       
+.filter-switch.my-4
+    label.toggle-control
+        input(type='checkbox' checked='checked')
+        span.control
+        | فقط کالاهای موجود

@@ -1,0 +1,150 @@
+.profile-cart
+  .profile-cart__header سفارش محصولات       
+  .col-12.myorder
+    .table-responsive
+      table.table.table-bordered.purchase-table
+        tbody
+          tr.purchase-table__header
+            th ردیف
+            th شماره سفارش
+            th تاریخ ثبت
+            th مجموع هزینه
+            th وضعیت سفارش
+            th لیست سفارش
+          tr.purchase-table__cell
+            td 1
+            td 74500
+            td 1394/3/17
+            td 3,150,300 تومان
+            td درحال بررسی
+            td
+              a.purchase-table__link(href="#listGroup1") مشاهده لیست
+          tr.purchase-table__cell
+            td 2
+            td 196522
+            td 1393/9/25
+            td 15,150,300 تومان
+            td تایید شده
+            td
+              a.purchase-table__link(href="#listGroup2") مشاهده لیست
+          tr.purchase-table__cell
+            td 3
+            td 74500
+            td 1394/3/17
+            td 3,150,300 تومان
+            td درحال بررسی
+            td
+              a.purchase-table__link(href="#listGroup3") مشاهده لیست
+          tr.purchase-table__cell
+            td 4
+            td 196522
+            td 1393/9/25
+            td 15,150,300 تومان
+            td تایید شده
+            td
+              a.purchase-table__link(href="#listGroup4") مشاهده لیست
+          tr.purchase-table__cell
+            td 5
+            td 74500
+            td 1394/3/17
+            td 3,150,300 تومان
+            td درحال بررسی
+            td
+              a.purchase-table__link(href="#listGroup5") مشاهده لیست
+          tr.purchase-table__cell
+            td 6
+            td 196522
+            td 1393/9/25
+            td 15,150,300 تومان
+            td تایید شده
+            td
+              a.purchase-table__link(href="#listGroup6") مشاهده لیست
+    #listGroup1.col-12.p-0.list-main(style="display: none").p-4
+      
+      p.title-greybackground
+          | سفارش 
+          span 58960
+      .profile-cart
+        .profile-cart__header
+          span فروشگاه اینترنتی کشاورزی
+        #print-factor
+            .table-responsive
+                table.table.table-bordered.mb-3.print-info
+                  tbody
+                    tr.print-info__tr1
+                      td(colspan="2")
+                        | نام: 
+                        span علیرضا حاجی قدیری
+                      td
+                        | شماره تماس: 
+                        span 09135423689
+                    tr.print-info__tr2
+                      td
+                        | شماره فاکتور: 
+                        span 8954256
+                      td
+                        | تاریخ ثبت سفارش: 
+                        span 12/02/95
+                      td
+                        | نحوه پرداخت: 
+                        span هنگام تحویل
+                    tr.print-info__tr1
+                      td(colspan="3")
+                        | آدرس:
+                        address.print-info__address
+                          | چنانچه قبلا در فروشگاه اینترنتی فرش کاشان
+                          | ثبت نام نکرده اید با کلیک برروی دکمه زیر ثبت
+                          | نام نموده و ادامه مراحل خرید را دنبال
+                          | نمایید.
+                .table-responsive
+                  table.table.table-bordered.purchase-table
+                    tbody
+                      tr.purchase-table__header
+                        th(colspan="2") عنوان محصول
+                        th تعداد
+                        th قیمت کالا
+                      tr.purchase-table__cell
+                        td
+                          img.purchase-table__img(title="" src="images/product1.png" alt="سبد خرید فرش کاشان")
+                        td فرش کرم 700 شانه 10 رنگ
+                        td 2
+                        td 5,196,300 تومان
+                      tr.purchase-table__cell
+                        td
+                          img.purchase-table__img(title="" src="dest/images/product1.png" alt="سبد خرید فرش کاشان")
+                        td فرش گلستان 1200 شانه 7 رنگ
+                        td 38
+                        td 3,150,300 تومان
+                      tr.purchase-table__cell
+                        td
+                          img.purchase-table__img(title="" src="dest/images/product1.png" alt="سبد خرید فرش کاشان")
+                        td فرش کرم 700 شانه 10 رنگ
+                        td 1
+                        td 5,196,300 تومان
+                      tr.purchase-table__cell
+                        td  
+                          img.purchase-table__img(title="" src="dest/images/product1.png" alt="سبد خرید فرش کاشان")
+                        td فرش کرم 700 شانه 10 رنگ
+                        td 15
+                        td 5,196,300 تومان
+                      tr.purchase-table__cell
+                        td(colspan="2") جمع کل
+                        td(colspan="2") 59800000تومان
+                .purchase-table__address
+                  ul
+                    li
+                      i.icon-map
+                      | کاشان;میدان معلم;خیابان
+                      |                             شهید مطهری ، جنب کلینیک فرهنگیان ، شرکت آیتیسا
+                    li
+                      i.icon-phone-ring
+                      | 031-55544356
+                    li
+                      i.icon-mobile
+                      | 09135495155-09367229323
+                    li
+                      i.icon-envelope
+                      | carpetstore@gmail.com
+      .print-button
+        a.print-button__link(onclick="jQuery.print('#print-factor')")
+          |  چاپ فاکتور

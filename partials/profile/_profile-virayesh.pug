@@ -1,0 +1,50 @@
+
+.profile-cart
+	.profile-cart__header ویرایش پروفایل شخصی
+	form.validate-form.form-card
+		.row.m-0
+			.col-12.col-md-6
+				.form-card__field
+					label(for="name").form-card__label نام
+					input(type="text" required="" name="name"  placeholder="نام و نام خانوادگی")#name.form-card__input
+				.form-card__field
+					label(for="phone").form-card__label تلفن ثابت
+					input(type="text" required="" name="phone" placeholder="تلفن ثابت")#phone.form-card__input
+				.form-card__field
+					label(for="mobile").form-card__label تلفن همراه
+					input(type="text" required="" name="mobile" placeholder="تلفن همراه")#mobile.form-card__input
+				.form-card__field
+					label(for="email").form-card__label ایمیل
+					input(type="text" required="" name="email" placeholder="ایمیل")#email.form-card__input                     
+			.col-12.col-md-6
+				.form-card__field.mySelectOption
+					label.form-card__label استان
+					.mySelectOption__wrapper
+						.select
+							span بخض مورد نظر خود را انتخاب کنید...
+							i.icon-angle-left
+						input(type='hidden' name='state')
+						ul.dropdown-menu
+							li#maleE مدیریت
+							li#femaleE فروش
+				.form-card__field.mySelectOption
+					label.form-card__label شهر
+					.mySelectOption__wrapper
+						.select
+							span بخض مورد نظر خود را انتخاب کنید...
+							i.icon-angle-left
+						input(type='hidden' name='city')
+						ul.dropdown-menu
+							li#male مدیریت
+							li#female فروش
+				.form-card__field
+					label(for="postal-code").form-card__label کدپستی
+					input(type="text" required="" name="postalcode" placeholder="کدپستی")#postal-code.form-card__input                        
+			.col-12.m-0
+				.form-card__field
+					label(for="address").form-card__label.form-card__label-textarae آدرس
+					textarea(type="text" rows="5" required="" name="address" placeholder="آدرس خود رو بنویسید").form-card__input
+			.col-12.mb-4.form-card__button
+				button.mx-2(type="submit")
+					| ثبت تغییرات
+				button.mx-2.ghost(type="submit") انصراف

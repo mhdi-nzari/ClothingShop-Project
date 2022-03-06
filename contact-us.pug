@@ -1,0 +1,107 @@
+extends partials/_layout
+block headStyle
+block header
+	include partials/header/_header
+	include partials/_pallet
+block content
+	include partials/_breadcrumb
+	section.contact-us
+		.container 
+			.row
+				h1.titles
+					| ارتباط با ما
+				.col-12.col-lg-6
+					h2.contact-us__sub-title فرم تماس
+					form.validate-form.form-card
+						.form-card__field
+							label(for="name").form-card__label نام
+							input(type="text" name="name" placeholder='نام و نام خانوادگی خود را وارد نمایید' required )#name.form-card__input
+						.form-card__field
+							label(for="email").form-card__label ایمیل
+							input(type="email" name="email" placeholder='ایمیل خود را وارد کنید' required )#email.form-card__input
+						.form-card__field.mySelectOption
+							label.form-card__label موضوع
+							.mySelectOption__wrapper
+								.select
+									span بخض مورد نظر خود را انتخاب کنید...
+									i.icon-angle-left
+								input(type='hidden' name='gender')
+								ul.dropdown-menu
+									li#male مدیریت
+									li#female فروش
+						.form-card__field
+							label(for="code").form-card__label کد امنیتی
+							input(type="text" name="securityCode" placeholder='کد امنیتی' required)#code.form-card__input
+							.captcha
+								a.captcha__link(href='#')
+									span.icon-reload
+								img.captcha__img(title='Captcha', src='dist/images/captcha.png', alt='کد امنیتی')
+						.form-card__field
+							label(for="textt").form-card__label.form-card__label-textarae متن نقد و بررسی شما 
+							textarea( name="messageBox" rows="4" placeholder='متن نقد و بررسی شما' required)#textt.form-card__input 
+						.form-card__button
+							button(type="submit").button-contact.button-all  ارسال پیام
+				.col-12.col-lg-6.contact-info
+					h2.contact-info__title راه های ارتباطی
+					ul.contact-info__list
+						li.contact-info__list-item
+							span.contact-info__list-icon.icon-map
+							p.contact-info__list-text کاشان;میدان معلم;خیابان شهید مطهری ، جنب کلینی  فرهنگیان ، شرکت فناوری اطلاعات آیتیسا
+						li.contact-info__list-item
+							span.contact-info__list-icon.icon-phone-ring
+							p.contact-info__list-text 031-55544356
+						li.contact-info__list-item
+							span.contact-info__list-icon.icon-mobile-1
+							p.contact-info__list-text 09135498585 - 09367229393
+						li.contact-info__list-item
+							span.contact-info__list-icon.icon-envelope
+							p.contact-info__list-text dalhailand@gmail.com
+						li.contact-social
+							span.contact-social__text شبکه های اجتماعی:
+							ul.social-media
+								li.social-media__item
+									a(href="#" title="شبکه اجتماعی فیس بوک")
+										span.social-media__icon.icon-facebook
+								li.social-media__item
+									a(href="#" title="شبکه اجتماعی تلگرام")
+										span.social-media__icon.icon-telegram
+								li.social-media__item
+									a(href="#" title="شبکه اجتماعی واتساپ")
+										span.social-media__icon.icon-whatsapp
+								li.social-media__item
+									a(href="#" title="شبکه اجتماعی توییتر")
+										span.social-media__icon.icon-twitter
+								li.social-media__item
+									a(href="#" title="شبکه اجتماعی اینستاگرام")
+										span.social-media__icon.icon-instagram
+								li.social-media__item
+									a(href="#" title="مسنجر فیس بوک")
+										span.social-media__icon.icon-facebook
+								li.social-media__item
+									a(href="#" title="لینکدین")
+										span.social-media__icon.icon-linkedin
+								li.social-media__item
+									a(href="#" title="گوگل پلاس")
+										span.social-media__icon.icon-google-plus
+								li.social-media__item
+									a(href="#" title="شبکه اجتماعی یوتیوب")
+										span.social-media__icon.icon-youtube
+								li.social-media__item
+									a(href="#" title="اسکایپ")
+										span.social-media__icon.icon-skype
+								li.social-media__item
+									a(href="#" title="پینترست")
+										span.social-media__icon.icon-pinterest
+					.contact-us__img
+						img.img-fluid(src="dist/images/contact.svg" alt="pic" title="pic")
+			.row
+				.col-12
+					iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d827.0175361900673!2d51.439173829210375!3d33.99073199878891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDU5JzI2LjYiTiA1McKwMjYnMjMuMCJF!5e0!3m2!1sen!2sir!4v1462168333926" allowfullscreen="")
+
+
+block footer
+	include partials/footer/_footer
+block scripts
+
+  
+

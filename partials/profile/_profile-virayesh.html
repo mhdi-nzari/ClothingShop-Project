@@ -1,0 +1,64 @@
+
+<div class="profile-cart">
+  <div class="profile-cart__header">ویرایش پروفایل شخصی</div>
+  <form class="validate-form form-card">
+    <div class="row m-0">
+      <div class="col-12 col-md-6">
+        <div class="form-card__field">
+          <label class="form-card__label" for="name">نام</label>
+          <input class="form-card__input" type="text" required="" name="name" placeholder="نام و نام خانوادگی" id="name"/>
+        </div>
+        <div class="form-card__field">
+          <label class="form-card__label" for="phone">تلفن ثابت</label>
+          <input class="form-card__input" type="text" required="" name="phone" placeholder="تلفن ثابت" id="phone"/>
+        </div>
+        <div class="form-card__field">
+          <label class="form-card__label" for="mobile">تلفن همراه</label>
+          <input class="form-card__input" type="text" required="" name="mobile" placeholder="تلفن همراه" id="mobile"/>
+        </div>
+        <div class="form-card__field">
+          <label class="form-card__label" for="email">ایمیل</label>
+          <input class="form-card__input" type="text" required="" name="email" placeholder="ایمیل" id="email"/>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="form-card__field mySelectOption">
+          <label class="form-card__label">استان</label>
+          <div class="mySelectOption__wrapper">
+            <div class="select"><span>بخض مورد نظر خود را انتخاب کنید...</span><i class="icon-angle-left"></i></div>
+            <input type="hidden" name="state"/>
+            <ul class="dropdown-menu">
+              <li id="maleE">مدیریت</li>
+              <li id="femaleE">فروش</li>
+            </ul>
+          </div>
+        </div>
+        <div class="form-card__field mySelectOption">
+          <label class="form-card__label">شهر</label>
+          <div class="mySelectOption__wrapper">
+            <div class="select"><span>بخض مورد نظر خود را انتخاب کنید...</span><i class="icon-angle-left"></i></div>
+            <input type="hidden" name="city"/>
+            <ul class="dropdown-menu">
+              <li id="male">مدیریت</li>
+              <li id="female">فروش</li>
+            </ul>
+          </div>
+        </div>
+        <div class="form-card__field">
+          <label class="form-card__label" for="postal-code">کدپستی</label>
+          <input class="form-card__input" type="text" required="" name="postalcode" placeholder="کدپستی" id="postal-code"/>
+        </div>
+      </div>
+      <div class="col-12 m-0">
+        <div class="form-card__field">
+          <label class="form-card__label form-card__label-textarae" for="address">آدرس</label>
+          <textarea class="form-card__input" type="text" rows="5" required="" name="address" placeholder="آدرس خود رو بنویسید"></textarea>
+        </div>
+      </div>
+      <div class="col-12 mb-4 form-card__button">
+        <button class="mx-2" type="submit">ثبت تغییرات</button>
+        <button class="mx-2 ghost" type="submit">انصراف</button>
+      </div>
+    </div>
+  </form>
+</div>

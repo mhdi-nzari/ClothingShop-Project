@@ -1,0 +1,30 @@
+extends partials/_layout
+
+block headStyle
+    link(rel='stylesheet', href='dist/styles/profileCart.css')
+    link(rel='stylesheet', href='styles/profileCart.css')
+block header
+    include partials/header/_header
+    include partials/_pallet
+block content
+    include partials/_breadcrumb
+    section
+        .container 
+            .row
+                h1.titles
+                    | پروفایل
+                .col-12.d-lg-none
+                    a(href="#" data-toggle="modal" data-target="#profileModal").button-profile
+                        span.icon-more.button-profile__icon
+                        | حساب کاربری من
+                .col-12.col-lg-4.col-xl-3.d-none.d-lg-block
+                    include partials/profile/_menu-profile
+                .col-12.col-lg-8.col-xl-9
+                    include partials/profile/_profile-virayesh
+                include partials/profile/_modal-menu-profile                                                
+                        
+    //footer
+block footer
+    include partials/footer/_footer
+block scripts
+    script(src='dist/scripts/jquery.validate.min.js')

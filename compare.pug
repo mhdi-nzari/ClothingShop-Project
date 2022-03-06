@@ -1,0 +1,124 @@
+extends partials/_layout
+block headStyle
+	link(rel='stylesheet', href='dist/styles/compare.min.css')
+
+block header
+	include partials/header/_header
+	include partials/_pallet
+block content
+	include partials/_breadcrumb
+	section.compare
+		.container 
+			.row
+				h1.titles
+					| درباره ما
+				div
+					.row.compare-list.m-0
+						.col-12.compare-product 
+							.tarinCarpet.compare-remove.col-md-3.col-sm-4.col-6.float-right
+								figure.product-grid8
+									.product-image8
+										//205*205
+										a(href="detail-product.html")
+											img.img-fluid(src='dist/images/product/01.jpg', alt="")
+										
+										span.product-discount-label 20%
+									figcaption.product-content
+										.price
+											| 2,800,000 تومان
+											span 3,000,000
+										.title
+											a(href='detail-product.html')
+												h4 کود فسفیت پتاسیم مایع
+
+								
+								span.icon-cancel.btn-remove(title='حذف این محصول از مقایسه')
+							.tarinCarpet.compare-remove.col-md-3.col-sm-4.d-sm-block.d-none.float-right
+								figure.product-grid8
+									.product-image8
+										//205*205
+										a(href="detail-product.html")
+											img.img-fluid(src='dist/images/product/01.jpg', alt="")
+										
+										span.product-discount-label 20%
+									figcaption.product-content
+										.price
+											| 2,800,000 تومان
+											span 3,000,000
+										.title
+											a(href='detail-product.html')
+												h4 کود فسفیت پتاسیم مایع
+
+								span.icon-cancel.btn-remove(title='حذف این محصول از مقایسه')
+							.tarinCarpet.compare-remove.col-3.float-right.d-md-block.d-none 
+								figure.product-grid8
+									.product-image8
+										//205*205
+										a(href="detail-product.html")
+											img.img-fluid(src='dist/images/product/01.jpg', alt="")
+										
+										span.product-discount-label 20%
+									figcaption.product-content
+										.price
+											| 2,800,000 تومان
+											span 3,000,000
+										.title
+											a(href='detail-product.html')
+												h4 کود فسفیت پتاسیم مایع
+
+
+								span.icon-cancel.btn-remove(title='حذف این محصول از مقایسه')
+							.col-md-3.col-sm-4.col-6.p-0.float-right
+								.compare-add-list
+									a.d-none.d-sm-block(href='#' data-toggle='modal' data-target='#modalCompare')
+										span.icon-card-plus-outline
+										p برای افزودن کالا به لیست مقایسه کلیک کنید
+									a(href='#')
+										span.icon-plus-circle
+	
+
+					.row.m-0
+						.col-12.compare-detail-row
+							.col-12.compare-detail-title
+								h6 رنگ بندی
+							.col-md-3.col-sm-4.col-6.float-right.compare-detail-column
+								span قرمز قرمز قرمز قرمز قرمز قرمز قرمز قرمز قرمز
+							.col-md-3.col-sm-4.d-sm-block.d-none.float-right.compare-detail-column
+								span سرمه ای
+							.col-3.float-right.d-md-block.d-none.compare-detail-column
+								span آبی
+							.col-md-3.col-sm-4.col-6.float-right.compare-detail-column
+								span کرم
+							
+						.col-12.compare-detail-row
+							.col-12.compare-detail-title
+								h6 سایزبندی
+							.col-md-3.col-sm-4.col-6.float-right.compare-detail-column
+								span.yekan 100 * 150
+							.col-md-3.col-sm-4.d-sm-block.d-none.float-right.compare-detail-column
+								span.yekan 100 * 150
+							.col-3.float-right.d-md-block.d-none.compare-detail-column
+								span.yekan 100 * 150
+							.col-md-3.col-sm-4.col-6.float-right.d-md-block.d-none.compare-detail-column
+								span.yekan 100 * 150
+						
+						.col-12.compare-detail-row
+							.col-12.compare-detail-title
+								h6 شکل بندی
+							.col-md-3.col-sm-4.col-6.float-right.compare-detail-column
+								span 100 * 150
+							.col-md-3.col-sm-4.d-sm-block.d-none.float-right.compare-detail-column
+								span 100 * 150
+							.col-3.float-right.d-md-block.d-none.compare-detail-column
+								span 100 * 150
+							.col-md-3.col-sm-4.col-6.float-right.compare-detail-column
+								span 100 * 150
+				include partials/_modal-compare
+				   
+block footer
+	include partials/footer/_footer
+block scripts
+
+
+  
+

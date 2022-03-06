@@ -1,0 +1,132 @@
+extends partials/_layout
+
+block headStyle
+    link(rel='stylesheet', href='dist/styles/profileCart.css')
+    link(rel='stylesheet', href='styles/profileCart.css')
+block header
+    include partials/cart/_cart-header
+    include partials/_pallet
+block content
+  .container.py-5
+    .checkout-wrap   
+      ul.d-lg-flex.d-none.checkout-bar
+        li.visited.first
+            a.checkout-steps__item-link.checkout-steps__item(href="cart2.html" data-title="مشخصات کاربر")
+        li.visited
+            a.checkout-steps__item-link.checkout-steps__item(data-title="اطلاعات آدرس" href="cart3.html")
+        li.visited
+            a.checkout-steps__item-link.checkout-steps__item(data-title="روش ارسال" href="cart4.html")
+        li.visited
+            a.checkout-steps__item-link.checkout-steps__item(data-title="روش پرداخت" href="cart5.html")    
+        li.last.visited
+            a.checkout-steps__item.checkout-steps__item--payment(data-title="اتمام خرید و بازبینی" href="cart6.html")
+    .row
+      .col-12.col-lg-8
+        .profile-cart
+          .profile-cart__header
+            span بازبینی و چاپ فاکتور
+          #print-factor
+            .table-responsive
+                table.table.table-bordered.mb-3.print-info
+                  tbody
+                    tr.print-info__tr1
+                      td(colspan="2")
+                        | نام: 
+                        span علیرضا حاجی قدیری
+                      td
+                        | شماره تماس: 
+                        span 09135423689
+                    tr.print-info__tr2
+                      td
+                        | شماره فاکتور: 
+                        span 8954256
+                      td
+                        | تاریخ ثبت سفارش: 
+                        span 12/02/95
+                      td
+                        | نحوه پرداخت: 
+                        span هنگام تحویل
+                    tr.print-info__tr1
+                      td(colspan="3")
+                        | آدرس:
+                        address.print-info__address
+                          | چنانچه قبلا در فروشگاه اینترنتی فرش کاشان
+                          | ثبت نام نکرده اید با کلیک برروی دکمه زیر ثبت
+                          | نام نموده و ادامه مراحل خرید را دنبال
+                          | نمایید.
+                .table-responsive
+                  table.table.table-bordered.purchase-table
+                    tbody
+                      tr.purchase-table__header
+                        th(colspan="2") عنوان محصول
+                        th تعداد
+                        th قیمت کالا
+                      tr.purchase-table__cell
+                        td
+                          img.purchase-table__img(title="" src="images/product1.png" alt="سبد خرید فرش کاشان")
+                        td فرش کرم 700 شانه 10 رنگ
+                        td 2
+                        td 5,196,300 تومان
+                      tr.purchase-table__cell
+                        td
+                          img.purchase-table__img(title="" src="dest/images/product1.png" alt="سبد خرید فرش کاشان")
+                        td فرش گلستان 1200 شانه 7 رنگ
+                        td 38
+                        td 3,150,300 تومان
+                      tr.purchase-table__cell
+                        td
+                          img.purchase-table__img(title="" src="dest/images/product1.png" alt="سبد خرید فرش کاشان")
+                        td فرش کرم 700 شانه 10 رنگ
+                        td 1
+                        td 5,196,300 تومان
+                      tr.purchase-table__cell
+                        td  
+                          img.purchase-table__img(title="" src="dest/images/product1.png" alt="سبد خرید فرش کاشان")
+                        td فرش کرم 700 شانه 10 رنگ
+                        td 15
+                        td 5,196,300 تومان
+                      tr.purchase-table__cell
+                        td(colspan="2") جمع کل
+                        td(colspan="2") 59800000تومان
+                .purchase-table__address
+                  ul
+                    li
+                      i.icon-map
+                      | کاشان;میدان معلم;خیابان
+                      |                             شهید مطهری ، جنب کلینیک فرهنگیان ، شرکت آیتیسا
+                    li
+                      i.icon-phone-ring
+                      | 031-55544356
+                    li
+                      i.icon-mobile
+                      | 09135495155-09367229323
+                    li
+                      i.icon-envelope
+                      | carpetstore@gmail.com
+            .print-button
+              a.print-button__link(onclick="jQuery.print('#print-factor')")
+                |  چاپ فاکتور
+      .col-12.col-lg-4.mt-4.mt-lg-0
+        .profile-cart
+          .profile-cart__header خلاصه سبد خرید
+          .cart-summary
+            .cart-summary__price
+              .cart-summary__item
+                span قیمت (3 مورد)
+                span 658,974 تومان
+              .cart-summary__item
+                span هزینه ارسال
+                span وابسته به شهر
+            .cart-summary__subtotal
+              .cart-summary__price-cart
+                span مبلغ کل پرداخت
+                span 1,258,974 تومان
+            
+            a.cart-summary__button-next(href="cart7.html")  ادامه فرآیند خرید 
+          
+            a.cart-summary__button-back(href="cart5.html")  بازگشت به مرحله قبل
+block scripts
+  script(src="dist/scripts/print.min.js")                        
+ 
+  
+                  

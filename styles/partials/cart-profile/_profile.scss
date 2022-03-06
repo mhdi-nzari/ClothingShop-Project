@@ -1,0 +1,231 @@
+// box-left
+.button-profile {
+    @include border-radius();
+    color: white;
+    background-color: $color-base;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 7px 14px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 10px #d8d8d8;
+    &__icon {
+        font-size: 1.5rem;
+        color: #ffffff;
+        padding-#{$left}: 7px;
+    }
+}
+
+.user-profile-header {
+    background-color: #fff;
+    @include box-shadow(0 1px 3px #74747447);
+    border-radius: 5px;
+    &__box-img {
+        position: relative;
+        width: 100%;
+        height: 60px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #f7f7f7;
+        @include border-radius( 5px 5px 0 0);
+    }
+    &__edit {
+        font-size: 6rem;
+        border: 4px solid #ffffff;
+        background-color: #ddd;
+        color: #ffffff;
+        @include border-radius( 50%);
+        width: 100px;
+        height: 100px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: absolute;
+        top: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        &:after {
+            content: $icon-camera;
+            font-family: icomoon;
+            position: absolute;
+            bottom: -30px;
+            width: 100%;
+            font-size: 1.8rem;
+            color: #ffffff;
+            background-color: rgba(68, 68, 68, 0.7);
+            text-align: center;
+            -webkit-transition: 300ms ease-out;
+            transition: 300ms ease-out;
+        }
+        &:hover:after {
+            bottom: 0!important;
+        }
+    }
+    &__img {
+        width: 100px;
+        height: 100px;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+    &__box-text {
+        padding: 45px 0 0;
+    }
+    &__name {
+        font-size: 1.6rem;
+        padding: 10px;
+        text-align: center;
+    }
+    &__box-link {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+         :first-child {
+            @include border-radius(0 0 5px 0);
+        }
+         :last-child {
+            @include border-radius(0 0 0 5px);
+        }
+    }
+    &__link {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        width: 100%;
+        padding: 10px 5px;
+        text-align: center;
+        color: #888888;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        background: #fafafa;
+        &:hover {
+            background-color: $color-base-hover;
+            color: #ffffff;
+        }
+    }
+    &__link:first-child {
+        border-left: 2px solid #ffffff;
+    }
+    // &__icon {
+    //     margin-left: 5px;
+    //     font-size: 1.8rem;
+    // }
+}
+
+.user-profile-menu {
+    margin-top: 30px;
+    @include box-shadow(0 1px 3px #74747447);
+    @include border-radius(5px);
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    &__item {
+        font-size: 1.3rem;
+        color: #777777;
+        position: relative;
+        display: block;
+        padding: 0.75rem 1.25rem;
+        background-color: #fff;
+        border-bottom: 1px solid #0000000d;
+        @include transition();
+        &:hover {
+            background-color: $color-base-hover;
+            color: #ffffff;
+        }
+        &:first-child {
+            @include border-radius(5px 5px 0 0)
+        }
+        &:last-child {
+            @include border-radius(0 0 5px 5px)
+        }
+    }
+    &__item--active {
+        background-color: $color-base;
+        border-color: $color-base;
+        color: #ffffff;
+    }
+}
+
+// mobal-menu-profile
+.profile-modal {
+    .modal-content {
+        border: none;
+        @include box-shadow(0 0 5px #7474744d);
+        @include border-radius();
+    }
+    &__title {
+        color: #4f4f4f;
+        font-size: 1.4rem;
+        font-weight: 600;
+        opacity: .5;
+    }
+    &__close {
+        margin: -1rem auto -1rem -1rem !important;
+        font-size: 1.9rem;
+        color: #4f4f4f;
+    }
+}
+
+// profile-order
+.table-orders {
+    padding: 20px;
+}
+
+#print-factor {
+    padding: 15px;
+}
+
+.myorder {
+    margin: 2rem 0;
+}
+
+.title-greybackground {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px auto 20px;
+    padding: 8px;
+    font-size: 1.4rem;
+    line-height: 2.2em;
+    width: 60%;
+    color: #4f4f4f;
+}
+
+.address-modal {
+    &__title {
+        color: #4f4f4f;
+        font-size: 1.4rem;
+        font-weight: 600;
+        opacity: .5;
+    }
+    &__close {
+        margin: -1rem auto -1rem -1rem !important;
+        font-size: 1.9rem;
+        color: #4f4f4f;
+    }
+}

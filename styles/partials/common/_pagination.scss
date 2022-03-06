@@ -1,0 +1,32 @@
+.my-pagination {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    .page-item {
+        .page-link {
+            border: none;
+            background-color: $color-base;
+            border: 1px solid $color-base;
+            -webkit-border-radius: 50% !important;
+            -moz-border-radius: 50% !important;
+            border-radius: 50% !important;
+            margin: 3px;
+            color: white;
+            width: 29px;
+            height: 29px;
+            @include transition();
+            @include flexrow-center;
+            &:focus {
+                outline: 0 0 0 0.2rem #d3202926;
+            }
+            &:hover {
+                background-color: $color-base-hover;
+            }
+        }
+        &.active {
+            .page-link {
+                background-color: white;
+                color: $color-base;
+            }
+        }
+    }
+}

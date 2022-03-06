@@ -1,0 +1,81 @@
+extends partials/_layout
+
+block headStyle
+    link(rel='stylesheet', href='dist/styles/profileCart.css')
+    link(rel='stylesheet', href='styles/profileCart.css')
+block header
+    include partials/cart/_cart-header
+    include partials/_pallet
+block content
+    .container.py-5
+        .checkout-wrap   
+            ul.d-lg-flex.d-none.checkout-bar
+                li.visited.first
+                    a.checkout-steps__item-link.checkout-steps__item(href="cart2.html" data-title="مشخصات کاربر")
+                li.visited
+                    a.checkout-steps__item-link.checkout-steps__item(data-title="اطلاعات آدرس" href="cart3.html")
+                li.visited
+                    a.checkout-steps__item-link.checkout-steps__item(data-title="روش ارسال" href="cart4.html")
+                li
+                    a.checkout-steps__item-link.checkout-steps__item(data-title="روش پرداخت")    
+                li.last
+                    a.checkout-steps__item.checkout-steps__item--payment(data-title="اتمام خرید و بازبینی")
+        // سبد خرید
+        .row
+            .col-12.col-lg-8
+                .profile-cart
+                    .profile-cart__header
+                        span انتخاب روش ارسال
+                    .shipping
+                        label.shipping__label
+                            span.shipping__list
+                                span.shipping__list-item
+                                        span ارسال درب منزل
+                                        span.timer (زمان تحویل :توافقی)
+                                span.shipping__list-item
+                                    span.c-p  12000
+                                    span  تومان
+                            span.shipping__input-radio
+                                input(type='radio', name='optradio')
+                        label.shipping__label
+                            span.shipping__list
+                                span.shipping__list-item
+                                    span ارسال با باربری
+                                    span.timer (زمان تحویل : 2 الی 3 روز)
+                                span.shipping__list-item
+                                    span.c-p 12000
+                                    span  تومان
+                            span.shipping__input-radio
+                                input(type='radio', name='optradio')
+                        label.shipping__label
+                            span.shipping__list
+                                span.shipping__list-item
+                                    span پیک موتوری
+                                    span.timer (زمان تحویل : 1 روز)
+                                span.shipping__list-item
+                                    span.c-p  12000
+                                    span  تومان
+                            span.shipping__input-radio
+                                input(type='radio', name='optradio')
+            .col-12.col-lg-4.mt-4.mt-lg-0
+                .profile-cart
+                    .profile-cart__header خلاصه سبد خرید
+                    .cart-summary
+                        .cart-summary__price
+                            .cart-summary__item
+                                span قیمت (3 مورد)
+                                span 658,974 تومان
+                            .cart-summary__item
+                                span هزینه ارسال
+                                span وابسته به شهر
+                        .cart-summary__subtotal
+                            .cart-summary__price-cart
+                                span مبلغ کل پرداخت
+                                span 1,258,974 تومان
+                        
+                        a.cart-summary__button-next(href="cart5.html")  ادامه فرآیند خرید 
+                    
+                        a.cart-summary__button-back(href="cart3.html")  بازگشت به مرحله قبل
+
+
+            

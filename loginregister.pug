@@ -1,0 +1,15 @@
+extends partials/_layout
+
+block headStyle
+  
+
+block content
+    section.login.login-page
+        .container 
+            .row
+                .col-12.justify-content-center.d-flex.mt-5
+                    .login__wrapper
+                        include partials/login-register/_enter                                    
+    //footer
+block scripts
+    script(src='dist/scripts/jquery.validate.min.js')

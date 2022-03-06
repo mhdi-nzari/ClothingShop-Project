@@ -1,0 +1,81 @@
+images/not-found.svg
+images/articles/fact-1.jpg
+images/articles/fact-2.jpg
+images/content/b1.png
+images/content/b2.png
+images/content/b3.png
+images/content/bg-top.png
+images/content/e-sign.png
+images/content/fertilizer.png
+images/content/grass.jpg
+images/content/growing-seed.png
+images/content/kasb-kar.png
+images/content/KESHAVARZI - Copy.png
+images/content/logo.png
+images/content/seeds.png
+images/content/soil-top.png
+images/content/soil.jpg
+images/content/tools.png
+images/e-sign/01.png
+images/e-sign/02.png
+images/e-sign/03.png
+images/e-sign/04.png
+images/e-sign/05.png
+images/e-sign/icon-footer.png
+images/favicon/android-chrome-192x192.png
+images/favicon/android-chrome-512x512.png
+images/favicon/apple-touch-icon.png
+images/favicon/favicon-16x16.png
+images/favicon/favicon-32x32.png
+images/favicon/favicon.ico
+images/gallery/lg1.jpg
+images/gallery/lg2.jpg
+images/gallery/lg3.jpg
+images/gallery/lg4.jpg
+images/gallery/s1.jpg
+images/gallery/s2.jpg
+images/gallery/s3.jpg
+images/gallery/s4.jpg
+images/lastproduct/1.jpg
+images/lastproduct/01.png
+images/lastproduct/2.jpg
+images/lastproduct/02.png
+images/lastproduct/3.jpg
+images/lastproduct/03.png
+images/lastproduct/4.jpg
+images/lastproduct/5.jpg
+images/menu/fertilizer.png
+images/menu/seed.png
+images/menu/tools.png
+images/product/01 - Copy.jpg
+images/product/01.jpg
+images/product/02 - Copy.jpg
+images/product/02.jpg
+images/product/03 - Copy.jpg
+images/product/03.jpg
+images/product/04 - Copy.jpg
+images/product/04.jpg
+images/product/05 - Copy.jpg
+images/product/05.jpg
+images/product/06 - Copy.jpg
+images/product/06.jpg
+images/product/07.jpg
+images/product/color-fertilizer.svg
+images/product/color-seeds.svg
+images/product/color-shovel-and-rake.svg
+images/product/fertilizer.svg
+images/product/seeds.svg
+images/product/shovel-and-rake.svg
+images/slide/01-md.jpg
+images/slide/01-s.jpg
+images/slide/01.jpg
+images/slide/02-md.jpg
+images/slide/02-s.jpg
+images/slide/02.jpg
+images/slide/03-md.jpg
+images/slide/03-s.jpg
+images/slide/03.jpg
+images/video/video-1.jpg
+*.rar
+.vscode/
+node_modules/

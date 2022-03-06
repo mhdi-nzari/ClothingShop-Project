@@ -1,0 +1,30 @@
+:root {
+  --data-color: #ff3e6c;
+  --color2: #4e4e4e;
+  --color3: #fbe172;
+  --color4: #4e4e4e;
+  --color5: #fef3de;
+}
+
+/*p{
+  float:$left;
+  padding-left:20px;
+}*/
+.gallery {
+  border-radius: 7px;
+  margin-bottom: 3rem;
+  box-shadow: 0 1px 4px #303030ad;
+}
+
+.gallery__img {
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+  transition: all 300ms ease-in-out;
+}
+
+.gallery:hover .gallery__img {
+  transform: scale(1.02);
+  box-shadow: none;
+}
+/*# sourceMappingURL=detailgallery.css.map */

@@ -1,0 +1,51 @@
+
+<form class="form-card" id="validate-form">
+  <div class="row m-0">
+    <div class="col-12 form-card__field">
+      <label class="form-card__label" for="phone">تلفن ثابت</label>
+      <input class="form-card__input" type="text" required="" name="phone" placeholder=" تلفن ثابت" id="phone"/>
+    </div>
+    <div class="col-12 form-card__field">
+      <label class="form-card__label" for="mobile">تلفن همراه</label>
+      <input class="form-card__input" type="text" required="" name="mobile" placeholder="تلفن همراه" id="mobile"/>
+    </div>
+    <div class="col-12 form-card__field">                         
+      <div class="mySelectOption">
+        <label class="form-card__label">موضوع</label>
+        <div class="mySelectOption__wrapper">
+          <div class="select"><span>بخض مورد نظر خود را انتخاب کنید...</span><i class="icon-angle-left"></i></div>
+          <input type="hidden" name="gender"/>
+          <ul class="dropdown-menu">
+            <li id="male">مدیریت</li>
+            <li id="female">فروش</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 form-card__field">                           
+      <div class="mySelectOption">
+        <label class="form-card__label">موضوع</label>
+        <div class="mySelectOption__wrapper">
+          <div class="select"><span>بخض مورد نظر خود را انتخاب کنید...</span><i class="icon-angle-left"></i></div>
+          <input type="hidden" name="gender"/>
+          <ul class="dropdown-menu">
+            <li id="malee">مدیریت</li>
+            <li id="femalee">فروش</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 form-card__field">
+      <label class="form-card__label" for="postal-code">کدپستی</label>
+      <input class="form-card__input" type="text" required="" name="postalcode" placeholder="کدپستی" id="postal-code"/>
+    </div>
+    <div class="col-12 form-card__field">
+      <label class="form-card__label form-card__label-textarae" for="address">آدرس</label>
+      <textarea class="form-card__input" type="text" rows="5" required="" name="address" placeholder="آدرس خود رو بنویسید" id="address"></textarea>
+    </div>
+    <div class="col-12 form-card__button">
+      <button class="mx-2" type="submit">ثبت</button>
+      <button class="mx-2 ghost" type="submit">انصراف</button>
+    </div>
+  </div>
+</form>

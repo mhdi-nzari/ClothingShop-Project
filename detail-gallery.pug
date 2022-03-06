@@ -1,0 +1,34 @@
+extends partials/_layout
+
+block headStyle
+	link(rel='stylesheet', href='dist/styles/detailGallery.css')
+	link(rel='stylesheet', href='styles/detailgallery.css')
+block header
+	include partials/header/_header
+	include partials/_pallet
+block content
+	include partials/_breadcrumb
+	section
+		.container
+			.row
+				h1.titles
+					| گالری
+					- var gallery = [{data : '1'},{data : '2', } ,{data  : '3'  }]
+					
+					mixin gallery
+						.col-12.col-sm-6.col-md-6.col-lg-4
+							.gallery
+								//image size 350*173
+								a.gallery__link.fancy(href="images/video/video-1.jpg" rel="gallery" data-fancybox="gallery" data-caption="Caption #1")
+									img.gallery__img(src='images/video/video-1.jpg' data-image-id=data, data-zoom-image='dist/images/gallery/product1-lg.jpg', alt='')
+				each image in gallery
+					+gallery(image.title)
+				each image in gallery
+					+gallery(image.title)
+
+				include partials/_pagination                            
+
+block footer
+	include partials/footer/_footer
+block scripts
+	script(src='dist/scripts/detailGallery.js')

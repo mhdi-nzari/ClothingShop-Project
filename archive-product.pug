@@ -1,0 +1,241 @@
+extends partials/_layout
+block headStyle
+    link(rel='stylesheet' href='dist/styles/archiveProduct.min.css')
+    link(rel='stylesheet' href='styles/archive-Product.css')
+block header
+    include partials/header/_header
+    include partials/_pallet
+block content
+    include partials/_breadcrumb
+    section.archiveproduct
+        .container
+            .row
+                h1.titles
+                    | آرشیو محصولات
+                .col-12
+                    .d-lg-none.d-block.fillter-sm
+                        button.mt-4.fillter-sm__button(data-toggle="modal" data-target="#archive-advanced-search")
+                            span
+                                | جستجوی پیشرفته
+                                // span.icon-search
+                    #archive-advanced-search.modal.fade(tabindex="-1" role="dialog" aria-hidden="true")
+                        include partials/archive-product/_filter-box-modal
+                    div.row
+                        .filter-box.col-lg-3.d-none.d-lg-flex.mb-5 
+                            .filter-box__wrapper
+                                include partials/archive-product/_filter-box
+                        .col-lg-9
+                            .row.archive-product
+                                .col-md-6.col-6.archive-product__items
+                                    .item 
+                                        .item_box_category
+
+
+                                            a.category_link(href="javascript:void(0)")
+                                                img.img_model_one(src="/dist/images/model/model-2.jpg" alt="") 
+                                                img.img_model_two(src="/dist/images/model/model-1.jpg" alt="") 
+
+                                            .product_hover 
+                                                a.eye_item(href="javascript:void(0)")       
+                                                    i.icon-eyeglasses
+                                                a.heart_item(href="javascript:void(0)")       
+                                                    i.icon-heart 
+                                                a.compare_item(href="javascript:void(0)")       
+                                                    i.icon-compare
+
+                                            .product_offer
+                                                span.percent %
+                                                span.offer 40
+
+
+
+
+                                            .desk_category
+                                                .group_1.odden
+                                                    a.product_brand 
+                                                        p.brand Tulika
+                                                    span.price_old 440,000 تومان
+
+                                                .group_2.odden
+                                                    a(href="javascript:void(0)").link_desk_title 
+                                                        p.desk_title تیشرت مردانه جنس مرغوب
+
+                                                    span.price_new 230,000 تومان
+
+                                                .group_3.odden.d-none.d-lg-flex 
+                                                    .prob
+                                                        span.proprity S 
+                                                        span.proprity M
+                                                        span.proprity L 
+                                                        span.proprity XL 
+                                                        span#balance +2
+                                                    .color_pallet
+                                                        span.color.red
+                                                        span.color.blue
+                                                        span.color.green
+                                                        span.color.pink
+                                                        span.color.black
+                                .col-md-6.col-6.archive-product__items
+                                    .item 
+                                        .item_box_category
+
+
+                                            a.category_link(href="javascript:void(0)")
+                                                img.img_model_one(src="/dist/images/model/model-2.jpg" alt="") 
+                                                img.img_model_two(src="/dist/images/model/model-1.jpg" alt="") 
+
+                                            .product_hover 
+                                                a.eye_item(href="javascript:void(0)")       
+                                                    i.icon-eyeglasses
+                                                a.heart_item(href="javascript:void(0)")       
+                                                    i.icon-heart 
+                                                a.compare_item(href="javascript:void(0)")       
+                                                    i.icon-compare
+
+                                            .product_offer
+                                                span.percent %
+                                                span.offer 40
+
+
+
+
+                                            .desk_category
+                                                .group_1.odden
+                                                    a.product_brand 
+                                                        p.brand Tulika
+                                                    span.price_old 440,000 تومان
+
+                                                .group_2.odden
+                                                    a(href="javascript:void(0)").link_desk_title 
+                                                        p.desk_title تیشرت مردانه جنس مرغوب
+
+                                                    span.price_new 230,000 تومان
+
+                                                .group_3.odden.d-none.d-lg-flex 
+                                                    .prob
+                                                        span.proprity S 
+                                                        span.proprity M
+                                                        span.proprity L 
+                                                        span.proprity XL 
+                                                        span#balance +2
+                                                    .color_pallet
+                                                        span.color.red
+                                                        span.color.blue
+                                                        span.color.green
+                                                        span.color.pink
+                                                        span.color.black
+                                .col-md-6.col-6.archive-product__items
+                                    .item 
+                                        .item_box_category
+
+
+                                            a.category_link(href="javascript:void(0)")
+                                                img.img_model_one(src="/dist/images/model/model-2.jpg" alt="") 
+                                                img.img_model_two(src="/dist/images/model/model-1.jpg" alt="") 
+
+                                            .product_hover 
+                                                a.eye_item(href="javascript:void(0)")       
+                                                    i.icon-eyeglasses
+                                                a.heart_item(href="javascript:void(0)")       
+                                                    i.icon-heart 
+                                                a.compare_item(href="javascript:void(0)")       
+                                                    i.icon-compare
+
+                                            .product_offer
+                                                span.percent %
+                                                span.offer 40
+
+
+
+
+                                            .desk_category
+                                                .group_1.odden
+                                                    a.product_brand 
+                                                        p.brand Tulika
+                                                    span.price_old 440,000 تومان
+
+                                                .group_2.odden
+                                                    a(href="javascript:void(0)").link_desk_title 
+                                                        p.desk_title تیشرت مردانه جنس مرغوب
+
+                                                    span.price_new 230,000 تومان
+
+                                                .group_3.odden.d-none.d-lg-flex 
+                                                    .prob
+                                                        span.proprity S 
+                                                        span.proprity M
+                                                        span.proprity L 
+                                                        span.proprity XL 
+                                                        span#balance +2
+                                                    .color_pallet
+                                                        span.color.red
+                                                        span.color.blue
+                                                        span.color.green
+                                                        span.color.pink
+                                                        span.color.black
+                                .col-md-6.col-6.archive-product__items
+                                    .item 
+                                        .item_box_category
+
+
+                                            a.category_link(href="javascript:void(0)")
+                                                img.img_model_one(src="/dist/images/model/model-2.jpg" alt="") 
+                                                img.img_model_two(src="/dist/images/model/model-1.jpg" alt="") 
+
+                                            .product_hover 
+                                                a.eye_item(href="javascript:void(0)")       
+                                                    i.icon-eyeglasses
+                                                a.heart_item(href="javascript:void(0)")       
+                                                    i.icon-heart 
+                                                a.compare_item(href="javascript:void(0)")       
+                                                    i.icon-compare
+
+                                            .product_offer
+                                                span.percent %
+                                                span.offer 40
+
+
+
+
+                                            .desk_category
+                                                .group_1.odden
+                                                    a.product_brand 
+                                                        p.brand Tulika
+                                                    span.price_old 440,000 تومان
+
+                                                .group_2.odden
+                                                    a(href="javascript:void(0)").link_desk_title 
+                                                        p.desk_title تیشرت مردانه جنس مرغوب
+
+                                                    span.price_new 230,000 تومان
+
+                                                .group_3.odden.d-none.d-lg-flex 
+                                                    .prob
+                                                        span.proprity S 
+                                                        span.proprity M
+                                                        span.proprity L 
+                                                        span.proprity XL 
+                                                        span#balance +2
+                                                    .color_pallet
+                                                        span.color.red
+                                                        span.color.blue
+                                                        span.color.green
+                                                        span.color.pink
+                                                        span.color.black
+
+                            //- .col-md-4.col-6.archive-product__items
+                            //-     include partials/_box-product
+                            //- .col-md-4.col-6.archive-product__items
+                            //-     include partials/_box-product
+                            //- .col-md-4.col-6.archive-product__items
+                            //-     include partials/_box-product
+                            //- .col-md-4.col-6.archive-product__items
+                            //-     include partials/_box-product
+                            //- .col-md-4.col-6.archive-product__items
+                            //-     include partials/_box-product
+                    include partials/_pagination             
+        //footer
+block footer
+    include partials/footer/_footer        
+block scripts
+    script(src='dist/scripts/ion.rangeSlider.min.js')

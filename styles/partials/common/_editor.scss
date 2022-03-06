@@ -1,0 +1,105 @@
+@mixin flexrow-around {
+    @include d-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin flexrow-between {
+    @include d-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.editor {
+    img {
+        @media (max-width: 576px) {
+            display: block;
+            float: none;
+            max-width: 100%;
+        }
+    }
+    div.flexrow-center {
+        @include flexrow-center;
+        @media (max-width: 1200px) {
+            flex-wrap: wrap;
+        }
+        p {
+            margin: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    div.flexrow-between {
+        @include flexrow-between;
+        @media (max-width: 1200px) {
+            flex-wrap: wrap;
+        }
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    div.flexrow-around {
+        @include flexrow-around;
+        @media (max-width: 1200px) {
+            flex-wrap: wrap;
+        }
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    h1 {
+        font-size: 20px;
+        line-height: 35px;
+        font-weight: 600;
+        margin-top: 15px;
+    }
+    h2 {
+        font-size: 18px;
+        line-height: 35px;
+        font-weight: 600;
+        margin-top: 15px;
+    }
+    h3 {
+        font-size: 16px;
+        line-height: 35px;
+        font-weight: 600;
+        margin-top: 15px;
+    }
+    h4 {
+        font-size: 15px;
+        line-height: 30px;
+        font-weight: 600;
+        margin-top: 15px;
+    }
+    h5 {
+        font-size: 15px;
+        line-height: 30px;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+    ul {
+        display: block;
+        list-style-type: unset;
+        line-height: 32px;
+        font-size: 16px;
+    }
+    ol {
+        display: block;
+        list-style-type: decimal;
+        line-height: 32px;
+        font-size: 16px;
+    }
+}

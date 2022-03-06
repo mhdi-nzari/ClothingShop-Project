@@ -1,0 +1,113 @@
+section
+  .container.comments-container 
+    .row
+      .col-12
+        .add-comments
+          h3.titles-section نظرات کاربران
+          form.validate-form.form-card
+                .row.m-0
+                  .col-md-6.col-12
+                    .form-card__field
+                      label(for="name").form-card__label نام
+                      input(type="text" required="" name="name"  placeholder="نام و نام خانوادگی")#name.form-card__input
+                    .form-card__field
+                      label(for="email").form-card__label ایمیل
+                      input(type="text" required="" name="email" placeholder="ایمیل")#email.form-card__input                     
+                    .form-card__field
+                      label.form-card__label کد امنیتی
+                      input.form-card__input#captcha(type='text', name='securityCode', placeholder='کد امنیتی را وارد کنید.', autocomplete='off' required)
+                      .captcha
+                        a.captcha__link(href='#')
+                          span.icon-reload
+                        img.captcha__img(title='Captcha', src='http://www.bazzarbeauty.com/captcha/default?Ovyr7qqP', alt='کد امنیتی' required)
+                    .form-card__field.pros
+                      label.form-card__label نقاط قوت
+                      input.form-card__input.pros__input#recipient-Strength(type='text', placeholder='نقاط قوت')
+                      button.pros__button
+                        span.icon-plus-circle
+                    .pros__wrapper
+                      ul.pros__list
+                    .form-card__field.cons
+                      label.form-card__label نقاط ضعف
+                      input.form-card__input.cons__input#recipient-Weakness(type='text', placeholder='نقاط ضعف ')
+                      button.cons__button
+                        span.icon-plus-circle
+                    .cons__wrapper
+                      ul.cons__list        
+                  .col-md-6.col-12
+                    .form-card__field
+                      label.form-card__label متن 
+                      textarea.form-card__input(rows='7', placeholder='متن نقد و بررسی شما')
+                    .checkbox-wrapper
+                      .checkbox.bounce
+                        input#c-1(type='radio', name='productgroup', value='22')
+                        svg(viewBox='0 0 21 21')
+                          polyline(points='5 10.75 8.5 14.25 16 6')
+                      label.checkbox-label(for='c-1') این محصول را پیشنهاد می کنم
+                    .checkbox-wrapper
+                      .checkbox.bounce
+                        input#c-2(type='radio', name='productgroup', value='22')
+                        svg(viewBox='0 0 21 21')
+                          polyline(points='5 10.75 8.5 14.25 16 6')
+                      label.checkbox-label(for='c-2') این محصول را پیشنهاد نمی کنم
+                  .col-12.form-card__button
+                      button(type="submit") ثبت نظر
+      .col-12
+        ul.comments
+          li.comments__container
+              .comments__header
+                i.icon-message-square
+                .comments__user
+                  p علیرضا حاجی قدیری راوندی
+                  time(datetime='2008-02-14 20:00') 26 اردبیهشت 1395
+                .comments__like
+                  form.like-form
+                    input(type="hidden")
+                    span.likeform__counter ۰
+                    button.like-form__button
+                      span.icon-heart
+                    
+              .comments__body
+                article لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیستری را برای طراحان رایانه ای و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                .comments__property
+                  .comments__property--positive
+                    span نقاط قوت
+                    ul.comments__property-list
+                      li.comments__property-item کیفیت مناسب
+                      li.comments__property-item کیفیت مناسب
+                      li.comments__property-item کیفیت مناسب
+                  .comments__property--negative
+                    span نقاط ضعف
+                    ul.comments__property-list
+                      li.comments__property-item نداشت
+                div
+                  .comments__recommend.comments__recommend--positive
+                    span.icon-like
+                    | خرید این محصول را توصیه می‌کنم
+                  .d-none.comments__recommend.comments__recommend--negative
+                    span.icon-dislike
+                    | خرید این محصول را توصیه نمی‌کنم
+                ul.comments
+                  li.comments__container
+                    .comments__header
+                          i.icon-message-square
+                          .comments__user
+                            p سید ابوالفضل طباطبایی
+                            time(datetime='2008-02-14 20:00') 26 اردبیهشت 1395
+                    .comments__body.comments__body--replay
+                      article لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                          
+          li.comments__container
+              .comments__header
+                  i.icon-message-square
+                  .comments__user
+                    p علیرضا حاجی قدیری راوندی
+                    time(datetime='2008-02-14 20:00') 26 اردبیهشت 1395    
+                  .comments__like
+                    form.like-form
+                      input(type="hidden")
+                      span.likeform__counter ۰
+                      button.like-form__button
+                        span.icon-heart
+              .comments__body
+                article لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیستری را برای طراحان رایانه ای و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.

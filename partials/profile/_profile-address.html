@@ -1,0 +1,142 @@
+
+<div class="profile-cart">
+  <div class="profile-cart__header">آدرس های ثبت شده</div>
+  <div class="table-responsive address">
+    <div class="address-card">
+      <ul class="address-card__list">
+        <li class="address-card__item"><span class="address-card__icon icon-map"></span> تهران، تهران، فرودگاه مهرآباد، پلاک ۲۲، واحد ۲</li>
+        <li class="address-card__item"><span class="address-card__icon icon-phone-ring"></span>55578350</li>
+        <li class="address-card__item"><span class="address-card__icon icon-mobile"></span>09132457899</li>
+        <li class="address-card__item"><span class="address-card__icon icon-envelope"></span>1256455555</li>
+      </ul>
+      <div class="address-card__edit"><a class="address-card__edit-item" href="#" data-toggle="modal" data-target=".address-modal"><span class="icon-edit address-card__edit-icon" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="ویرایش آدرس"></span>ویرایش آدرس </a><a class="address-card__edit-item delete-address" href="#"><span class="icon-trash address-card__edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="حذف این آدرس"></span>حذف آدرس</a></div>
+    </div>
+    <div class="address-card">
+      <ul class="address-card__list">
+        <li class="address-card__item"><span class="address-card__icon icon-map"></span> تهران، تهران، فرودگاه مهرآباد، پلاک ۲۲، واحد ۲</li>
+        <li class="address-card__item"><span class="address-card__icon icon-phone-ring"></span>55578350</li>
+        <li class="address-card__item"><span class="address-card__icon icon-mobile"></span>09132457899</li>
+        <li class="address-card__item"><span class="address-card__icon icon-envelope"></span>1256455555</li>
+      </ul>
+      <div class="address-card__edit"><a class="address-card__edit-item" href="#" data-toggle="modal" data-target=".address-modal"><span class="icon-edit address-card__edit-icon" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="ویرایش آدرس"></span>ویرایش آدرس </a><a class="address-card__edit-item delete-address" href="#"><span class="icon-trash address-card__edit-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="حذف این آدرس"></span>حذف آدرس</a></div>
+    </div>
+  </div>
+  <!-- MODAL ADDRESS EDIT-->
+  <div class="address-modal modal fade" tabindex="-1" role="dialog" aria-labelledby="address-modal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header align-items-center">
+          <h5 class="address-modal__title" id="address-modal">ویرایش آدرس</h5>
+          <button class="close address-modal__close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        </div>
+        <div class="modal-body">
+          <form class="form-card" id="validate-form">
+            <div class="row m-0">
+              <div class="col-12 form-card__field">
+                <label class="form-card__label" for="phone">تلفن ثابت</label>
+                <input class="form-card__input" type="text" required="" name="phone" placeholder=" تلفن ثابت" id="phone"/>
+              </div>
+              <div class="col-12 form-card__field">
+                <label class="form-card__label" for="mobile">تلفن همراه</label>
+                <input class="form-card__input" type="text" required="" name="mobile" placeholder="تلفن همراه" id="mobile"/>
+              </div>
+              <div class="col-12 form-card__field">                         
+                <div class="mySelectOption">
+                  <label class="form-card__label">موضوع</label>
+                  <div class="mySelectOption__wrapper">
+                    <div class="select"><span>بخض مورد نظر خود را انتخاب کنید...</span><i class="icon-angle-left"></i></div>
+                    <input type="hidden" name="gender"/>
+                    <ul class="dropdown-menu">
+                      <li id="male">مدیریت</li>
+                      <li id="female">فروش</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 form-card__field">                           
+                <div class="mySelectOption">
+                  <label class="form-card__label">موضوع</label>
+                  <div class="mySelectOption__wrapper">
+                    <div class="select"><span>بخض مورد نظر خود را انتخاب کنید...</span><i class="icon-angle-left"></i></div>
+                    <input type="hidden" name="gender"/>
+                    <ul class="dropdown-menu">
+                      <li id="malee">مدیریت</li>
+                      <li id="femalee">فروش</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 form-card__field">
+                <label class="form-card__label" for="postal-code">کدپستی</label>
+                <input class="form-card__input" type="text" required="" name="postalcode" placeholder="کدپستی" id="postal-code"/>
+              </div>
+              <div class="col-12 form-card__field">
+                <label class="form-card__label form-card__label-textarae" for="address">آدرس</label>
+                <textarea class="form-card__input" type="text" rows="5" required="" name="address" placeholder="آدرس خود رو بنویسید" id="address"></textarea>
+              </div>
+              <div class="col-12 form-card__button">
+                <button class="mx-2" type="submit">ثبت</button>
+                <button class="mx-2 ghost" type="submit">انصراف</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="contentTitle">
+      <p class="title-greybackground">افزودن آدرس جدید</p>
+    </div>
+    <form class="form-card" id="validate-form">
+      <div class="row m-0">
+        <div class="col-12 col-md-6 form-card__field">
+          <label class="form-card__label" for="phone">تلفن ثابت</label>
+          <input class="form-card__input" type="text" required="" name="phone" placeholder=" تلفن ثابت" id="phone"/>
+        </div>
+        <div class="col-12 col-md-6 form-card__field">
+          <label class="form-card__label" for="mobile">تلفن همراه</label>
+          <input class="form-card__input" type="text" required="" name="mobile" placeholder="تلفن همراه" id="mobile"/>
+        </div>
+        <div class="col-12 col-md-6 form-card__field">                         
+          <div class="mySelectOption">
+            <label class="form-card__label">موضوع</label>
+            <div class="mySelectOption__wrapper">
+              <div class="select"><span>بخض مورد نظر خود را انتخاب کنید...</span><i class="icon-angle-left"></i></div>
+              <input type="hidden" name="gender"/>
+              <ul class="dropdown-menu">
+                <li id="male">مدیریت</li>
+                <li id="female">فروش</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 form-card__field">                           
+          <div class="mySelectOption">
+            <label class="form-card__label">موضوع</label>
+            <div class="mySelectOption__wrapper">
+              <div class="select"><span>بخض مورد نظر خود را انتخاب کنید...</span><i class="icon-angle-left"></i></div>
+              <input type="hidden" name="gender"/>
+              <ul class="dropdown-menu">
+                <li id="malee">مدیریت</li>
+                <li id="femalee">فروش</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 form-card__field">
+          <label class="form-card__label" for="postal-code">کدپستی</label>
+          <input class="form-card__input" type="text" required="" name="postalcode" placeholder="کدپستی" id="postal-code"/>
+        </div>
+        <div class="col-12 col-md-6 form-card__field">
+          <label class="form-card__label form-card__label-textarae" for="address">آدرس</label>
+          <textarea class="form-card__input" type="text" rows="5" required="" name="address" placeholder="آدرس خود رو بنویسید" id="address"></textarea>
+        </div>
+        <div class="col-12 form-card__button">
+          <button class="mx-2" type="submit">ثبت</button>
+          <button class="mx-2 ghost" type="submit">انصراف</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

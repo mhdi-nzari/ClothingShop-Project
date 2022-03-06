@@ -1,0 +1,58 @@
+extends partials/_layout
+
+block headStyle
+
+    link(rel='stylesheet', href='dist/styles/profileCart.css')
+    link(rel='stylesheet', href='styles/profileCart.css')
+
+block header
+    include partials/cart/_cart-header
+    include partials/_pallet
+block content
+    .container.py-5
+        .checkout-wrap
+            ul.d-lg-flex.d-none.checkout-bar
+                li.visited.first
+                    a.checkout-steps__item-link.checkout-steps__item(href="cart2.html" data-title="مشخصات کاربر")
+                li
+                    a.checkout-steps__item-link.checkout-steps__item(data-title="اطلاعات آدرس")
+                li
+                    a.checkout-steps__item-link.checkout-steps__item(data-title="روش ارسال")
+                li
+                    a.checkout-steps__item-link.checkout-steps__item(data-title="روش پرداخت")    
+                li.last
+                    a.checkout-steps__item.checkout-steps__item--payment(data-title="اتمام خرید و بازبینی")
+        // سبد خرید
+        .row
+            .col-12.col-lg-8
+                .profile-cart
+                    .profile-cart__header 
+                        span مشخصات کاربر
+                    .specifications-user
+                        table.table.table-bordered.specifications-user__table
+                            tbody
+                                tr.specifications-user__tr
+                                    th نام و نام خانوادگی
+                                    th تلفن همراه
+                                    th ایمیل
+                                tr.specifications-user__tr
+                                    td علیرضا حاجی قدیری
+                                    td 09135490000
+                                    td afsane-90@yahoo.com
+            .col-12.col-lg-4.mt-4.mt-lg-0
+                .profile-cart
+                    .profile-cart__header خلاصه سبد خرید
+                    .cart-summary
+                        .cart-summary__price
+                            .cart-summary__item
+                                span قیمت (3 مورد)
+                                span 658,974 تومان
+                            .cart-summary__item
+                                span هزینه ارسال
+                                span وابسته به شهر
+                        .cart-summary__subtotal
+                            .cart-summary__price-cart
+                                span مبلغ کل پرداخت
+                                span 1,258,974 تومان
+                        a.cart-summary__button-next(href="cart3.html")  ادامه فرآیند خرید 
+                        a.cart-summary__button-back(href="cart1.html")  بازگشت به مرحله قبل

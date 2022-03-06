@@ -1,0 +1,35 @@
+extends partials/_layout
+
+block headStyle
+block header
+	include partials/header/_header
+	include partials/_pallet
+block content
+	include partials/_breadcrumb
+	section
+		.container
+			.row
+				h1.titles
+					| گالری
+					- var info = [{title: 'ویدئو شماره یک' },{title: 'ای عزیزای دلم'} ,{title : 'غنچه تو باغچه ها جادر میشه باز'  }];
+					
+					mixin gallery(title)
+						.col-12.col-sm-6.col-md-6.col-lg-4
+								//image size 350*173
+								figure.video
+									img.video__img(src='images/video/video-1.jpg')
+									span.video__icon.icon-image
+									figcaption.video__content
+										h2.video__title= title
+									a.video__link(href="detail-gallery.html")
+				each gallery in info
+					+gallery(gallery.title)
+				each gallery in info
+					+gallery(gallery.title)
+						
+
+				include partials/_pagination                            
+
+block footer
+	include partials/footer/_footer
+block scripts

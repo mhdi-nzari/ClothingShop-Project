@@ -1,0 +1,107 @@
+/* *******************************   owl-carousel for most ************************************ */
+
+.owl-carousel.owl-product {
+  .owl-stage-outer {
+    padding: 0px;
+    margin-top: 20px;
+    .owl-stage {
+      .owl-item {
+        @include flexrow-center;
+      }
+    }
+  }
+}
+
+.owl-theme {
+  .owl-dots {
+    margin-top: 0px;
+    .owl-dot.active {
+      span {
+        background-color: $color-base;
+        @include transition();
+      }
+    }
+  }
+}
+
+.owl-slide {
+  z-index: 0;
+  .owl-nav {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    height: 0;
+    %owl-navigation {
+      position: absolute;
+      cursor: pointer;
+      @include flexrow-center;
+      @include transition();
+    }
+    .owl-next {
+      background: white;
+      border-radius: 30px;
+      padding: 20px;
+      &:hover {
+        span {
+          color: $color-base;
+          background-color: transparent;
+          border: 1px solid white;
+        }
+      }
+      span {
+        @extend %owl-navigation;
+        left: 2%;
+        font-size: 3rem;
+        font-weight: bold;
+        @include transition();
+        background: white;
+        border-radius: 30px;
+        padding: 2px;
+        color: rgb(78, 78, 78);
+        border: 1px solid white;
+      }
+    }
+    .owl-prev {
+      &:hover {
+        span {
+          color: $color-base;
+          background-color: transparent;
+          border: 1px solid white;
+        }
+      }
+      span {
+        @extend %owl-navigation;
+        right: 2%;
+        font-size: 3rem;
+        font-weight: bold;
+        @include transition();
+        background: white;
+        border-radius: 30px;
+        padding: 2px;
+        color: rgb(78, 78, 78);
+        border: 1px solid white;
+      }
+    }
+  }
+  .owl-dots {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    .owl-dot {
+      left: 50%;
+      span {
+        margin-top: -60px;
+        position: relative;
+        z-index: 100;
+        @include transition();
+        width: 13px;
+        height: 13px;
+      }
+    }
+  }
+  .owl-dots .owl-dot.active span,
+  .owl-dots .owl-dot:hover span {
+    width: 13px;
+    background-color: $color-base;
+  }
+}

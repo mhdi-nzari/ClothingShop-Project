@@ -1,0 +1,62 @@
+.col-12.col-lg-6.col-xl-7.description
+  .row
+    .col-xs-12.description__Product-Status
+      span.description__label-detail وضعیت :
+      //.description__span-detail--notavailable ناموجود
+      span.description__span-detail--available موجود
+    .col-12.description__Product-Status
+      span.description__label-detail کد محصول :
+      span.description__span-detail مدل سونیا 15236
+    .col-12.description__Product-Status
+      span.description__label-detail سایز :
+      span.description__span-detail 30 cc
+    .col-12.description__Product-Status
+      span.description__label-detail ارتفاع :
+      span.description__span-detail 13 cm
+    .col-12.description__Product-Status
+      span.description__label-detail عرض :
+      span.description__span-detail 13 cm
+    .col-12.description__Product-Status
+      span.description__label-detail سایز :
+      form.size
+        fieldset.size__toolbar
+          div
+            input.size__input#xl(type='radio', name='color', value='xl', checked)
+            label.size__label(for='xl')
+              span 13*13
+          div
+            input.size__input#lg(type='radio', name='color', value='lg')
+            label.size__label(for='lg')
+              span 10*10
+          div
+            input.size__input#md(type='radio', name='color', value='md')
+            label.size__label(for='md')
+              span 7*7
+    .col-12.description__Product-Status
+      span.description__label-detail رنگ بندی :
+      form.color
+        fieldset.color__field
+          div
+            input.color__input#red(type='radio', name='color', value='red', checked)
+            label.color__label(data-toggle='tooltip', data-placement='top', title='red', for='red')
+              span
+          div
+            input.color__input#blue(type='radio', name='color', value='blue')
+            label.color__label(data-toggle='tooltip', data-placement='top', title='blue', for='blue')
+              span
+          div
+            input.color__input#black(type='radio', name='color', value='black')
+            label.color__label(data-toggle='tooltip', data-placement='top', title='black', for='black')
+              span
+    .col-12.description__Product-Status
+      span.description__label-detail قیمت :
+      span.description__span-detail--price 6,150,000 ریال
+      span.description__span-detail--discount 6,150,000 ریال
+    .col-12.productbutton
+      span.productbutton__label تعداد :
+      select.productbutton__quantity(name="cars" id="cars")
+        option(value="volvo") 1
+        option(value="saab") 2
+        option(value="mercedes") 3
+        option(value="audi") 4
+      button.add-cart(type="submit") اضافه کردن به سبد خرید

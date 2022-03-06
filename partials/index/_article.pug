@@ -1,0 +1,53 @@
+- var info = [{img:'/dist/images/articles/01.jpg' ,title:'از سیر تا پیاز استایل اوور سایز زنانه'}]
+
+mixin cart(img ,title)
+	section.article-section
+		.container-fluid
+			.row
+				.owl-carousel.owl-theme.owl-article
+					.item
+						.article_wrapper
+							.first
+								a.article_img_link(href="javascript:void(0)")
+									img.article_img(src=img alt="pic")
+								.new جدید
+							.article_desk
+								a.article_title(href="javascript:void(0)")
+									p.title=title
+								.is_divider
+
+								p.article_discription به نظر می‌رسد لباس‌های اورسایز چیزی نیست که به این زودی‌ها‌ ویترین مغازه‌ها را ترک کند. لباس‌هایی که نمونه آن‌ها را در فیلم و تصویرهای...
+
+								.proprity
+									#date
+										i.icon-edit
+										.date 1397/10/25
+
+									//- #reading_time
+									//- 	i.icon-hourglass-1
+									//- 	.time 2 دقیقه
+									#author
+										i.icon-user
+										.person مهدی نظری
+each cart in info 		
+	+cart(cart.img ,cart.title)
+
+
+
+//- - var info = [{img:'dist/images/product/01.jpg' , date:'20 بهمن 2021' , title:'مزاياي خدمات پوشش هاي GRP' } , {img:'dist/images/product/02.jpg',date:'20 شهریور 2021' , title:'حوزه های کاربرد GRP' } , {img:'dist/images/product/03.jpg',date:'20 شهریور 2021' , title:'حوزه های کاربرد GRP' }]
+//- mixin article(img,date,title)
+//-   .col-sm-6.col-lg-4.article
+//-     a.article__items(href="detail-article.html")
+//-       .article__img-wrapper
+//-         //371*247
+//-         img.article__img.img-fluid(src=img, alt="")
+//-         span.article__date=date
+//-       .article__content
+//-         h5.article__title=title
+
+//- each article in info
+//-   +article(article.img,article.date,article.title)
+
+//- .col-12 				
+//- 	h3.article-section__title مقالات 
+//- include ../_article-items

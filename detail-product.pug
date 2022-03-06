@@ -1,0 +1,27 @@
+extends partials/_layout
+block headStyle
+    link(rel='stylesheet' href='dist/styles/detailProduct.css')
+    link(rel='stylesheet' href='styles/detailproduct.css')
+block header
+    include partials/header/_header
+    include partials/_pallet
+block content
+    include partials/_breadcrumb
+    section
+        .container 
+            .row
+                h1.titles
+                    | جزئیات محصول
+                include partials/detail-product/_detail-product-slider
+                include partials/detail-product/_detail-product-detail
+
+    include partials/detail-product/_detail-product-description    
+    //- include partials/detail-product/_detail-product-similar
+    include partials/index/_newest
+    include partials/detail-product/_detail-product-comment 
+block footer
+    include partials/footer/_footer
+block scripts
+    script(src='dist/scripts/detailProduct.js')
+
+

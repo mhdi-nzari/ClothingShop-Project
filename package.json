@@ -1,0 +1,29 @@
+{
+    "name": "bime",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://gitlab.com/roya.mosavi/bime-v1.git"
+    },
+    "author": "tahmine gholamian",
+    "license": "ISC",
+    "devDependencies": {
+        "grunt": "^1.0.4",
+        "grunt-contrib-clean": "^2.0.0",
+        "grunt-contrib-concat": "^1.0.1",
+        "grunt-contrib-copy": "^1.0.0",
+        "grunt-contrib-cssmin": "^3.0.0",
+        "grunt-contrib-uglify": "^4.0.1",
+        "grunt-contrib-watch": "^1.1.0",
+        "grunt-remove-comments": "^0.1.6"
+    },
+    "bugs": {
+        "url": "https://gitlab.com/roya.mosavi/bime-v1/issues"
+    },
+    "homepage": "https://gitlab.com/roya.mosavi/bime-v1#README"
+}

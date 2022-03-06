@@ -1,0 +1,38 @@
+.cart__item
+    .row
+        .col-12.col-md-3.cart__item-img
+                img.img-fluid(src="dist/images/product/01.jpg" alt="pic")
+        .col-12.col-md-9
+            .cart__item-title
+                p کیسه سیمان
+            .cart__detail
+                .cart-detail1
+                    div
+                        .cart-detail1__item
+                            |  سیمان
+                        .cart-detail1__item
+                            | 5 کیلویی
+                        .cart-detail1__item
+                            | کیسه ای
+                    .d-flex.mt-4
+                        .quantity
+                            input(type='number', min='1', max='1000', step='1', value='1' readonly="")
+                            .quantity-nav.cart-loader
+                                .quantity-button.quantity-up +
+                                .quantity-button.quantity-down -
+                        a.cart-detail1__delete
+                            span.icon.icon-trash
+                            | حذف
+                .cart-detail2
+                    .row
+                        .col-12.cart-detail2__top
+                            .cart-detail2__price
+                                span ارزش واقعی
+                                span.del
+                                    del 395,000
+                                    |  تومان
+                            .cart-detail2__Discount.cart-detail2__Discount--green
+                                span تخفیف 
+                                span 5,962,000 تومان   
+                        .col-12.cart-detail2__bottom
+                            button.cart-detail2__add-cart افزودن به سبد خرید

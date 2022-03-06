@@ -1,0 +1,303 @@
+.compare {
+    margin-top: 1.5rem;
+    margin-bottom: 13rem;
+}
+
+.compare {
+    position: relative;
+}
+
+.compare-list {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.compare-product {
+    /*padding: 15px;*/
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    @include border-radius(7px 7px 0 0);
+}
+
+.compare-product {
+    padding: 0;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    @include media-xs {
+        border: none;
+    }
+}
+
+.compare-product .tarinCarpet {
+    border-left: 1px solid #cccccc;
+    border-bottom: 2px solid #aaaaaa;
+    padding: 0;
+    height: 300px;
+    @include media-lg {
+        height: 285px;
+    }
+    @include media-xs {
+        border-bottom: none;
+        margin-bottom: 10px;
+        border-left: none;
+    }
+}
+
+.compare-product .tarinCarpet:hover {
+    box-shadow: -1px -2px 3px 0 #d6d6d6;
+}
+
+.compare-product .tarinCarpet:nth-child(4) {
+    border-left: 1px solid transparent;
+}
+
+.compare-product .tarinCarpet:after {
+    width: 0;
+    height: 0;
+    border-color: #aaaaaa transparent transparent;
+    border-style: solid;
+    border-width: 10px 10px 0;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    margin-left: -5px;
+    content: "";
+    @include media-xs {
+        display: none;
+    }
+}
+
+.compare-product .tarinCarpet .btn-remove {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #727272;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    z-index: 9;
+    cursor: pointer;
+    text-align: center;
+    line-height: 28px;
+}
+
+.compare-product .tarinCarpet .btn-remove {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #dddddd;
+    color: #727272;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    z-index: 9;
+    cursor: pointer;
+    text-align: center;
+    line-height: 28px;
+}
+
+.compare-add-list {
+    height: 300px;
+    @include flexcolumn-center;
+    padding: 40px;
+    @include media-lg {
+        height: 285px;
+    }
+    @include media-xs {
+        background: #eeeeee;
+        border-radius: 5px;
+        margin-left: 0px;
+    }
+}
+
+.compare-add-list span {
+    font-size: 7em;
+    color: #aaaaaa;
+    transition: all 0.2s ease-in-out;
+}
+
+.compare-add-list p {
+    font-size: 15px;
+    line-height: 2.1em;
+    color: #999;
+    margin: 0;
+    @include media-lg {
+        display: none;
+    }
+}
+
+.compare-add-list a {
+    padding: 10px;
+}
+
+.compare-add-list a:hover span {
+    color: #777;
+}
+
+.compare-detail-row {
+    padding: 0;
+}
+
+.compare-detail-title {
+    background-color: #eeeeee;
+}
+
+.compare-detail-title h6 {
+    font-size: 15px;
+    line-height: 2.2em;
+    margin: 0;
+    padding: 4px 0;
+}
+
+.compare-detail-column {
+    border-left: 1px solid #cccccc;
+    padding: 8px 15px;
+    margin: 10px 0;
+    @include media-xs {
+        border-left: none;
+    }
+}
+
+.compare-detail-column:last-child {
+    border-left: none;
+}
+
+.compare-detail-column span {
+    font-size: 1.4rem;
+    line-height: 2.2em;
+    overflow: hidden;
+    display: block;
+    text-align: justify;
+}
+
+.compare-detail-column span.yekan {
+    font-size: 1.8rem;
+}
+
+.modal .tarinCarpet {
+    border: 1px solid #eeeeee;
+    padding: 0;
+}
+
+.tarinCarpet .par-img-owl {
+    width: 100px !important;
+    height: 100px !important;
+    padding: 0;
+}
+
+.tarinCarpet .par-img-owl img {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+// modal-compare
+.mdl-defult {
+    .form-control {
+        height: 40px;
+        font-size: 1.3rem;
+    }
+    .modal-header {
+        background: $color-base;
+        align-items: center;
+        padding: 8px 12px;
+        text-align: center;
+    }
+}
+
+.text-white {
+    color: #fff !important;
+    font-size: 1.4rem;
+    padding-right: 4rem;
+}
+
+.input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+.mdl-defult .modal-header button {
+    margin: 0;
+    padding: 10px;
+    color: #fff;
+}
+
+.modal-header .close {
+    margin-top: -4px;
+    padding: initial;
+    position: absolute;
+    right: 7px;
+    color: #fff;
+    font-size: 25px;
+    opacity: 0.8;
+    top: 10px;
+    z-index: 9;
+}
+
+.drop-srch-add {
+    text-align: right;
+    font-size: 13px;
+    line-height: 2;
+}
+
+.btn-srch-add {
+    background: #fff;
+    font-size: 12px;
+    height: 40px;
+    color: rgb(115, 115, 115) !important;
+    width: 150px;
+    border-right: 1px solid rgb(218, 218, 218);
+}
+
+.input-group>.input-group-append>.btn {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.input-group>.form-control:not(:last-child) {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.btn-srch-add:after {
+    margin-right: 8px;
+}
+
+.tarinCarpet .product-grid8 {
+    box-shadow: none;
+    height: 100%;
+    @include border-radius( 7px 7px 0 0);
+    &:hover {
+        @media (min-width: 576px) {
+            box-shadow: none;
+        }
+    }
+    @include media-xs {
+        box-shadow: 0 1px 3px #74747447;
+    }
+    .product-image8 {
+        @include d-flex;
+        justify-content: center;
+    }
+    .product-content {
+        padding: 0 10px;
+        .price {
+            padding-bottom: 0;
+        }
+        h4 {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,98 @@
+.modal-dialog(role="document")
+    .modal-content
+        .filter-box-modal
+            .close-modal
+                button.filter-box-modal__close(type="button" data-dismiss="modal")
+                    span.icon-cancel-circle
+            .filter-search.mt-3
+                span.filter-search__label جستجو :
+                .filter-search__form.my-2
+                    .form-field
+                        input.form-control(type="text" placeholder="اینجا جستجو کنید...")
+                    button.filter-search__submit(type="button")
+                        span.icon-search
+            #main-accordion.filter-accordion
+                .filter-accordion__item
+                    h5.filter-accordion__header
+                        button.filter-accordion__button.collapsed(data-toggle="collapse" data-target="#group-collapse-d1" aria-expanded="false")
+                            | فیلتر براساس ناشر
+                        span.icon-angle-down.filter-accordion__icon          
+                    #group-collapse-d1.collapse.show(data-parent="#main-accordion")
+                        .row
+                            .col-12.filter-accordion__body-item
+                                .checkbox.bounce
+                                    input(type='checkbox')#input_6
+                                    svg(viewBox='0 0 21 21')
+                                        polyline(points='5 10.75 8.5 14.25 16 6')
+                                label.checkbox-label(for="input_6") پاشا باغچه            
+                            .col-12.filter-accordion__body-item
+                                .checkbox.bounce
+                                    input#input_7(type='checkbox')
+                                    svg(viewBox='0 0 21 21')
+                                        polyline(points='5 10.75 8.5 14.25 16 6')
+                                label.checkbox-label(for="input_7") پاشا باغچه           
+                            .col-12.filter-accordion__body-item
+                                .checkbox.bounce
+                                    input#input_8(type='checkbox')
+                                    svg(viewBox='0 0 21 21')
+                                        polyline(points='5 10.75 8.5 14.25 16 6')
+                                label.checkbox-label(for="input_8") پاشا باغچه           
+                            .col-12.filter-accordion__body-item
+                                .checkbox.bounce
+                                    input#input_9(type='checkbox')
+                                    svg(viewBox='0 0 21 21')
+                                        polyline(points='5 10.75 8.5 14.25 16 6')
+                                label.checkbox-label(for="input_9") پاشا باغچه      
+                            .col-12.filter-accordion__body-item
+                                .checkbox.bounce
+                                    input#input_10(type='checkbox')
+                                    svg(viewBox='0 0 21 21')
+                                        polyline(points='5 10.75 8.5 14.25 16 6')
+                                label.checkbox-label(for="input_10") پاشا باغچه
+                include _range-slider            
+                .filter-accordion__item
+                    h5.filter-accordion__header
+                        button.filter-accordion__button.collapsed(data-toggle='collapse', data-target='#collapse-color1', aria-expanded='false')
+                            | رنگ بندی
+                            span.icon-angle-down.filter-accordion__icon
+                    #collapse-color1.collapse(role='tabpanel', data-parent='#main-accordion')
+                        form.color
+                            fieldset.color__field
+                                div
+                                    input.color__input#green(type='checkbox')
+                                    label.color__label(data-toggle='tooltip', data-placement='top', title='green', for='green')
+                                        span
+                                div
+                                    input.color__input#lightgreen(type='checkbox')
+                                    label.color__label(data-toggle='tooltip', data-placement='top', title='lightgreen', for='lightgreen')
+                                        span
+                                div
+                                    input.color__input#darkgreen(type='checkbox')
+                                    label.color__label(data-toggle='tooltip', data-placement='top', title='darkgreen', for='darkgreen')
+                                        span
+                        .moreitem
+                        #more-filter.in.collapse
+                            form.color
+                            fieldset.color__field
+                                div
+                                    input.color__input#yellow(type='checkbox')
+                                    label.color__label(data-toggle='tooltip', data-placement='top', title='yellow', for='yellow')
+                                        span
+                                div
+                                    input.color__input#orange(type='checkbox')
+                                    label.color__label(data-toggle='tooltip', data-placement='top', title='orange', for='orange')
+                                        span
+                                div
+                                    input.color__input#teal(type='checkbox')
+                                    label.color__label(data-toggle='tooltip', data-placement='top', title='teal', for='teal')
+                                        span
+                        a.more-button.up-down.collapsed(href='#more-filter', data-toggle='collapse', aria-expanded='false')
+                            | نمایش بیشتر
+                                    
+                            
+            .filter-switch.my-4
+                label.toggle-control
+                    input(type='checkbox' checked='checked')
+                    span.control
+                    | فقط کالاهای موجود
+

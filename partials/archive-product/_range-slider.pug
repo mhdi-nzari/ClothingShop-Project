@@ -1,0 +1,8 @@
+.filter-accordion__item
+    h5.filter-accordion__header
+        button.filter-accordion__button.collapsed(data-toggle='collapse', data-target='.group-collapse-range', aria-expanded='false')
+            | رنج قیمت
+            span.icon-angle-down.filter-accordion__icon             
+    .group-collapse-range.collapse(data-parent='#main-accordion')
+        .p-0.slider-range-box
+            input.demo_3.text-hide(type='text', name='demo_3', value='', tabindex='-1', readonly='')

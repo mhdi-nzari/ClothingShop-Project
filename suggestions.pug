@@ -1,0 +1,44 @@
+extends partials/_layout
+
+block headStyle
+block header
+	include partials/header/_header
+	include partials/_pallet
+block content
+	include partials/_breadcrumb
+	section.suggestion
+		.container 
+			.row
+				h1.titles
+					| انتقادات و پیشنهادات
+				.col-12.suggestion__text
+					p نظرات، پيشنهادات و انتقادات ارزشمند شما کاربران گرامی در هر بخش از فعاليت های ما در شناسایی نقاط قوت و ضعف خدمات و محصولات یاری خواهد رساند.
+					p می توانید از طریق فرم ارسال پیام واقع در همین صفحه یا از طریق اطلاعات مندرج در صفحه تماس با ما انتقادات و پیشنهادات خود را با ما در میان بگذارید. صمیمانه پذیرای نظرات ارزشمند شما خواهیم بود.
+				.col-12.suggestion__form
+					form#validate-form.form-card
+						.row.m-0
+							.col-12.col-md-6.form-card__field
+								label(for="name").form-card__label نام
+								input(type="text" name="name" placeholder='نام و نام خانوادگی خود را وارد نمایید' required )#name.form-card__input
+							.col-12.col-md-6.form-card__field
+								label(for="email").form-card__label ایمیل
+								input(type="email" name="email" placeholder='ایمیل خود را وارد کنید' required )#email.form-card__input
+							.col-12.col-md-6.form-card__field
+								label(for="phone").form-card__label شماره تماس
+								input(type="text" required="" name="phone" placeholder="شماره تماس خود را وارد کنید")#phone.form-card__input
+							.col-12.col-md-6.form-card__field
+								label(for="code").form-card__label کد امنیتی
+								input(type="text" name="securityCode" placeholder='کد امنیتی' required)#code.form-card__input
+								.captcha
+									a.captcha__link(href='#')
+										span.icon-reload
+									img.captcha__img(title='Captcha', src='dist/images/captcha.png', alt='کد امنیتی')
+							.col-12.form-card__field
+								label(for="textt").form-card__label.form-card__label-textarae متن نقد و بررسی شما 
+								textarea( name="messageBox" rows="5" placeholder='متن نقد و بررسی شما' required)#textt.form-card__input 
+							.col-12.form-card__button
+								button(type="submit").button-contact.button-all  ارسال پیام
+
+block footer
+	include partials/footer/_footer
+block scripts

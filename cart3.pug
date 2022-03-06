@@ -1,0 +1,128 @@
+extends partials/_layout
+
+block headStyle
+    link(rel='stylesheet', href='dist/styles/profileCart.css')
+    link(rel='stylesheet', href='styles/profileCart.css')
+
+block header
+    include partials/cart/_cart-header
+    include partials/_pallet
+block content
+  .container.py-5
+    .checkout-wrap
+      .checkout-wrap
+        ul.d-lg-flex.d-none.checkout-bar
+          li.visited.first
+            a.checkout-steps__item-link.checkout-steps__item(href="cart2.html" data-title="مشخصات کاربر")
+          li.visited
+            a.checkout-steps__item-link.checkout-steps__item(href="cart3.html" data-title="اطلاعات آدرس")
+          li
+            a.checkout-steps__item-link.checkout-steps__item(data-title="روش ارسال")
+          li
+            a.checkout-steps__item-link.checkout-steps__item(data-title="روش پرداخت")    
+          li.last
+            a.checkout-steps__item.checkout-steps__item--payment(data-title="اتمام خرید و بازبینی")
+    .row
+      .col-12.col-lg-8
+        .profile-cart
+          .profile-cart__header 
+            span مشخصات کاربر
+          .address-cart
+                .address-cart__items
+                    label.address-cart__label
+                        span.address-cart__spans
+                            span
+                                span تلفن همراه:
+                                span 03155454555
+                            span
+                                span تلفن ثابلت:
+                                span                                                 55454555
+                            span
+                                span کدپستی:
+                                span                                              1312455454555
+                            span
+                                span آدرس:
+                                span چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+                        input(type='radio', name='optradio')
+
+                .address-cart__items
+                    label.address-cart__label
+                        span.address-cart__spans
+                            span
+                                span تلفن همراه:
+                                span 03155454555
+                            span
+                                span تلفن ثابلت:
+                                span                                                 55454555
+                            span
+                                span کدپستی:
+                                span                                              1312455454555
+                            span
+                                span آدرس:
+                                span چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+                        input(type='radio', name='optradio')
+                .mainAccordion
+                  p.accordion.add
+                    span.titr افزودن آدرس جدید
+                  .panel
+                    form.row.form-card
+                      .col-12.col-md-6.form-card__field
+                          label(for="phone").form-card__label تلفن ثابت
+                          input(type="text" required="" name="phone" placeholder=" تلفن ثابت")#phone.form-card__input
+                          
+                      .col-12.col-md-6.form-card__field
+                          label(for="mobile").form-card__label تلفن همراه
+                          input(type="text" required="" name="mobile" placeholder="تلفن همراه")#mobile.form-card__input
+                          
+                      .col-12.col-md-6.form-card__field                          
+                        .mySelectOption
+                          label.form-card__label موضوع
+                          .mySelectOption__wrapper
+                            .select
+                              span بخض مورد نظر خود را انتخاب کنید...
+                              i.icon-angle-left
+                            input(type='hidden' name='gender')
+                            ul.dropdown-menu
+                              li#male مدیریت
+                              li#female فروش
+                      .col-12.col-md-6.form-card__field                            
+                        .mySelectOption
+                          label.form-card__label موضوع
+                          .mySelectOption__wrapper
+                            .select
+                              span بخض مورد نظر خود را انتخاب کنید...
+                              i.icon-angle-left
+                            input(type='hidden' name='gender')
+                            ul.dropdown-menu
+                              li#malee مدیریت
+                              li#femalee فروش
+                      .col-12.col-md-6.form-card__field
+                          label(for="postal-code").form-card__label کدپستی
+                          input(type="text" required="" name="postalcode" placeholder="کدپستی")#postal-code.form-card__input
+                      .col-12.col-md-6.form-card__field
+                        label(for="address").form-card__label.form-card__label-textarae آدرس
+                        textarea( required="" rows="2" name="address" placeholder="آدرس")#address.form-card__input   
+                      .col-12.form-card__button
+                        button.mx-2(type="submit") ثبت
+                        button.mx-2(type="submit") انصراف					
+      .col-12.col-lg-4.mt-4.mt-lg-0
+        .profile-cart
+          .profile-cart__header خلاصه سبد خرید
+          .cart-summary
+            .cart-summary__price
+              .cart-summary__item
+                span قیمت (3 مورد)
+                span 658,974 تومان
+              .cart-summary__item
+                span هزینه ارسال
+                span وابسته به شهر
+            .cart-summary__subtotal
+              .cart-summary__price-cart
+                span مبلغ کل پرداخت
+                span 1,258,974 تومان
+            
+            a.cart-summary__button-next(href="cart4.html")  ادامه فرآیند خرید 
+          
+            a.cart-summary__button-back(href="cart2.html")  بازگشت به مرحله قبل
+  
+            

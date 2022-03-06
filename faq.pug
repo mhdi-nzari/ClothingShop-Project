@@ -1,0 +1,69 @@
+extends partials/_layout
+block headStyle
+    
+block header
+    include partials/header/_header
+    include partials/_pallet
+block content
+    include partials/_breadcrumb
+    section.textPage
+        .container
+            .row
+                h1.titles
+                    | آرشیو محصولات
+                .col-12
+                    #faq-accordion
+                        .faq-card
+                            #faq-headingOne.faq-card__header
+                                h5.mb-0
+                                    button.faq-card__button(data-toggle='collapse', data-target='#faq-collapseOne', aria-expanded='true', aria-controls='faq-collapseOne')
+                                        | خرید اینترنتی فرش
+                                    
+                            #faq-collapseOne.collapse.show(aria-labelledby='faq-headingOne', data-parent='#faq-accordion')
+                                .faq-card__body
+                                    h4.faq-card__title
+                                        span 1 - 
+                                        |بهترین جنس فرش کدام است؟
+
+                                    p در بازار فرش ماشینی انواع جنس نظیر پلی استر، اکریلیک و غیره وجود دارد. بهترین جنس فرش ماشینی موجود در بازار فرش اکریلیک است. اکریلیک مشکلی که دارد این است که مدتی پرز میدهد، که با استفاده از تکنولوژی هیت ست، این مشکل برطرف شده و اکریلیک هیت ست، یکی از پرطرفدارترین فرش های ماشینی شده است.
+                            
+                        .faq-card
+                            #faq-headingTwo.faq-card__header
+                                h5.mb-0
+                                    button.faq-card__button(data-toggle='collapse', data-target='#faq-collapseTwo', aria-expanded='false', aria-controls='faq-collapseTwo')
+                                        | جنس فرش
+                            #faq-collapseTwo.collapse(aria-labelledby='faq-headingTwo', data-parent='#faq-accordion')
+                                .faq-card__body
+                                    h4.faq-card__title 
+                                        span 1 - 
+                                        |بهترین جنس فرش کدام است؟
+
+                                    p در بازار فرش ماشینی انواع جنس نظیر پلی استر، اکریلیک و غیره وجود دارد. بهترین جنس فرش ماشینی موجود در بازار فرش اکریلیک است. اکریلیک مشکلی که دارد این است که مدتی پرز میدهد، که با استفاده از تکنولوژی هیت ست، این مشکل برطرف شده و اکریلیک هیت ست، یکی از پرطرفدارترین فرش های ماشینی شده است.
+                                    h4.faq-card__title 
+                                        span 2 - 
+                                            |فرش شنل یا فرش فریز و شگی چه فرشی است؟
+                                    p کاربر گرامی این فرش ها در دسته فرش های فانتزی قرار می گیرد. فرش های فانتزی نیز جز فرشهای ماشینی می باشد.اما فرش های ماشینی 700، 1000 و 1200 شانه جز فرش های لوکس قرار می گیرد، و طرح های سنتی و کلاسیک دارد. فرش های فانتزی از جمله نقشه های مدرن فرش های ماشینی هستند، که برای مکان های پر رفت و آمد مناسب نیستند زیرا قابلیت پاخوری بالا برای اینگونه فرشها در نظر گرفته نشده است.  
+
+                        .faq-card
+                            #faq-headingThree.faq-card__header
+                                h5.mb-0
+                                    button.faq-card__button(data-toggle='collapse', data-target='#faq-collapseThree', aria-expanded='false', aria-controls='faq-collapseThree')
+                                        | مشخصات فنی
+                            #faq-collapseThree.collapse(aria-labelledby='faq-headingThree', data-parent='#faq-accordion')
+                                .faq-card__body
+                                    h4.faq-card__title 
+                                        span 1 - 
+                                            |بهترین جنس فرش کدام است؟
+
+                                    p در بازار فرش ماشینی انواع جنس نظیر پلی استر، اکریلیک و غیره وجود دارد. بهترین جنس فرش ماشینی موجود در بازار فرش اکریلیک است. اکریلیک مشکلی که دارد این است که مدتی پرز میدهد، که با استفاده از تکنولوژی هیت ست، این مشکل برطرف شده و اکریلیک هیت ست، یکی از پرطرفدارترین فرش های ماشینی شده است.
+                                    h4.faq-card__title 
+                                        span 2 - 
+                                            |فرش شنل یا فرش فریز و شگی چه فرشی است؟
+                                    p کاربر گرامی این فرش ها در دسته فرش های فانتزی قرار می گیرد. فرش های فانتزی نیز جز فرشهای ماشینی می باشد.اما فرش های ماشینی 700، 1000 و 1200 شانه جز فرش های لوکس قرار می گیرد، و طرح های سنتی و کلاسیک دارد. فرش های فانتزی از جمله نقشه های مدرن فرش های ماشینی هستند، که برای مکان های پر رفت و آمد مناسب نیستند زیرا قابلیت پاخوری بالا برای اینگونه فرشها در نظر گرفته نشده است.  
+
+
+        //footer
+block footer
+    include partials/footer/_footer        
+block scripts
+    script(src='dist/scripts/ion.rangeSlider.min.js')

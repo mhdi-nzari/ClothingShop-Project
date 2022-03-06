@@ -1,0 +1,34 @@
+doctype html
+html(dir="rtl" lang="fa")
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title شیکسون
+        meta(name='author' content='tgh ')
+        link(href="dist/images/favicon/favicon.ico" type="image/x-icon" rel="shortcut icon")
+        link(rel='apple-touch-icon' sizes='180x180' href='dist/images/favicon/apple-touch-icon.png')
+        link(rel='icon' type='image/png' sizes='32x32' href='dist/images/favicon/favicon-32x32.png')
+        //- link(rel='icon' type='image/png' sizes='32x32' href='dist/images/favicon/favicon-192x192.png')
+        link(rel='icon' type='image/png' sizes='16x16' href='dist/images/favicon/favicon-16x16.png')
+        meta(name='theme-color' content='#d3aa69')
+        link(rel="stylesheet" href="dist/styles/common.min.css")
+        link(rel="stylesheet" href="styles/common.css")
+
+        block headStyle
+
+        title شیکسون
+    body
+        include login-register/_loginregister-modal
+        block header
+        main
+            block content
+        //******** end of #main ********//
+        block footer
+        script(src='dist/scripts/common.min.js')
+        block scripts
+        //- script(src='dist/scripts/main.js')
+        script(src='scripts/main.js')
+
+
+
+    // body

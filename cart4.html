@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شیکسون</title>
+    <meta name="author" content="tgh ">
+    <link href="dist/images/favicon/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicon/favicon-16x16.png">
+    <meta name="theme-color" content="#d3aa69">
+    <link rel="stylesheet" href="dist/styles/common.min.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="dist/styles/profileCart.css">
+    <link rel="stylesheet" href="styles/profileCart.css">
+    <title>شیکسون</title>
+  </head>
+  <body>
+    <div class="login modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="login__icon-wrapper mt-3"><span class="icon-user login__icon"></span></div>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="login__form">
+              <form class="validate-form form-card">
+                <div class="row m-0">
+                  <div class="col-12 form-card__field">
+                    <div class="form-card__field">
+                      <label class="mb-3 form-card__label" for="phone">شماره موبایل</label>
+                      <input class="form-card__input" type="text" required="" name="phone" placeholder="شماره موبایل خود را وارد کنید" id="phone">
+                    </div>
+                  </div>
+                  <div class="col-12 login__buttons">
+                    <button class="login__confirm" type="submit">ادامه</button>
+                    <div class="login__line my-4"> 
+                      <p class="login__line-text">یا</p>
+                    </div>
+                    <button class="mx-2 login__social" type="submit"> <span class="icon-google"></span>ورود با حساب گوگل</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="login__icon-wrapper mt-3"><span class="icon-user login__icon"></span></div>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="login__form">
+              <form class="validate-form form-card">
+                <div class="row m-0">
+                  <div class="col-12 form-card__field">
+                    <div class="form-card__field">
+                      <div class="form-card__field">
+                        <label class="mb-3 form-card__label" for="new">کد تایید برای شماره موبایل۰۹۳۳۸۰۶۹۲۵۴ارسال گردید</label>
+                        <input class="form-card__input" type="password" name="code" required="" placeholder=" کد ارسالی" id="new">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 login__buttons">
+                    <button class="login__confirm" type="submit">ادامه</button>
+                  </div>
+                  <div class="col-12 login__resend">
+                    <p class="login__text">اعتبار کد تا 03:00 </p>
+                    <button><span class="icon-reload"> </span>ارسال مجدد</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="login__return">
+              <button class="login__return-btn">
+                 بازگشت        </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="login__icon-wrapper mt-3"><span class="icon-user login__icon"></span></div>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="login__form">
+              <form class="validate-form form-card">
+                <div class="row m-0">
+                  <div class="col-12 form-card__field">
+                    <div class="form-card__field">
+                      <div class="form-card__field">
+                        <label class="form-card__label mb-3" for="new">رمز عبور </label>
+                        <input class="form-card__input" type="password" name="password" required="" placeholder=" رمز عبور خود را وارد کنید." id="new">
+                        <input class="form-card__input mt-2" type="password" name="password" required="" placeholder="تکرار مجدد رمز عبور.">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 login__buttons">
+                    <button class="login__confirm" type="submit">ادامه</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="login__return">
+              <button class="login__return-btn">
+                 بازگشت</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="login__icon-wrapper mt-3"><span class="icon-user login__icon"></span></div>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="login__form">
+              <form class="validate-form form-card">
+                <div class="row m-0">
+                  <div class="col-12 form-card__field">
+                    <div class="form-card__field">
+                      <div class="form-card__field">
+                        <label class="form-card__label mb-3" for="new">رمز عبور </label>
+                        <input class="form-card__input" type="password" name="password" required="" placeholder=" رمز عبور خود را وارد کنید." id="new">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 login__buttons">
+                    <button class="login__confirm" type="submit">ادامه</button>
+                  </div>
+                  <div class="col-12 login__link-wrapper"><a class="login__link" href="">ورود با رمز یکبار مصرف </a><a class="login__link" href="">رمز عبور خود را فراموش کرده اید؟ </a></div>
+                </div>
+              </form>
+            </div>
+            <div class="login__return">
+              <button class="login__return-btn">
+                 بازگشت</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header-cart">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 header-cart__logo"><a href="index.html"><img class="header-cart__img" src="dist/images/content/logo.png" alt="pic"></a></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container py-5">
+        <div class="checkout-wrap">  
+          <ul class="d-lg-flex d-none checkout-bar">
+            <li class="visited first"><a class="checkout-steps__item-link checkout-steps__item" href="cart2.html" data-title="مشخصات کاربر"></a></li>
+            <li class="visited"><a class="checkout-steps__item-link checkout-steps__item" data-title="اطلاعات آدرس" href="cart3.html"></a></li>
+            <li class="visited"><a class="checkout-steps__item-link checkout-steps__item" data-title="روش ارسال" href="cart4.html"></a></li>
+            <li><a class="checkout-steps__item-link checkout-steps__item" data-title="روش پرداخت">   </a></li>
+            <li class="last"><a class="checkout-steps__item checkout-steps__item--payment" data-title="اتمام خرید و بازبینی"></a></li>
+          </ul>
+        </div>
+        <!-- سبد خرید-->
+        <div class="row">
+          <div class="col-12 col-lg-8">
+            <div class="profile-cart">
+              <div class="profile-cart__header"><span>انتخاب روش ارسال</span></div>
+              <div class="shipping">
+                <label class="shipping__label"><span class="shipping__list"><span class="shipping__list-item"><span>ارسال درب منزل</span><span class="timer">(زمان تحویل :توافقی)</span></span><span class="shipping__list-item"><span class="c-p"> 12000</span><span> تومان</span></span></span><span class="shipping__input-radio">
+                    <input type="radio" name="optradio"></span></label>
+                <label class="shipping__label"><span class="shipping__list"><span class="shipping__list-item"><span>ارسال با باربری</span><span class="timer">(زمان تحویل : 2 الی 3 روز)</span></span><span class="shipping__list-item"><span class="c-p">12000</span><span> تومان</span></span></span><span class="shipping__input-radio">
+                    <input type="radio" name="optradio"></span></label>
+                <label class="shipping__label"><span class="shipping__list"><span class="shipping__list-item"><span>پیک موتوری</span><span class="timer">(زمان تحویل : 1 روز)</span></span><span class="shipping__list-item"><span class="c-p"> 12000</span><span> تومان</span></span></span><span class="shipping__input-radio">
+                    <input type="radio" name="optradio"></span></label>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 mt-4 mt-lg-0">
+            <div class="profile-cart">
+              <div class="profile-cart__header">خلاصه سبد خرید</div>
+              <div class="cart-summary">
+                <div class="cart-summary__price">
+                  <div class="cart-summary__item"><span>قیمت (3 مورد)</span><span>658,974 تومان</span></div>
+                  <div class="cart-summary__item"><span>هزینه ارسال</span><span>وابسته به شهر</span></div>
+                </div>
+                <div class="cart-summary__subtotal">
+                  <div class="cart-summary__price-cart"><span>مبلغ کل پرداخت</span><span>1,258,974 تومان</span></div>
+                </div><a class="cart-summary__button-next" href="cart5.html"> ادامه فرآیند خرید </a><a class="cart-summary__button-back" href="cart3.html"> بازگشت به مرحله قبل</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--******** end of #main ********//-->
+    <script src="dist/scripts/common.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+  <!-- body-->
+</html>

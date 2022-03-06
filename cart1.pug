@@ -1,0 +1,50 @@
+extends partials/_layout
+
+block headStyle
+    link(rel='stylesheet', href='dist/styles/profileCart.css')
+    link(rel='stylesheet', href='styles/profileCart.css')
+block header
+    include partials/header/_header
+    include partials/_pallet
+block content
+    include partials/_breadcrumb
+    section.pc-page
+        .container 
+            .row
+                h1.titles
+                    | سبد خرید
+                .col-12.col-lg-8
+                    .profile-cart
+                        .profile-cart__header سبد خرید
+                            span.profile-cart__quantity (23 کالا)
+                        .cart
+                            .cart__list
+                                include partials/cart/_cart1-box-cart-item
+                                include partials/cart/_cart1-box-cart-item
+                                include partials/cart/_cart1-box-cart-item
+                        
+                .col-12.col-lg-4.mt-4.mt-lg-0
+                    include partials/cart/_cart1-discount-code
+                    .profile-cart
+                        .profile-cart__header خلاصه سبد خرید
+                        .cart-summary
+                            .cart-summary__price
+                                .cart-summary__item
+                                    span قیمت (3 مورد)
+                                    span 658,974 تومان
+                                .cart-summary__item
+                                    span هزینه ارسال
+                                    span وابسته به شهر
+                            .cart-summary__subtotal
+                                .cart-summary__price-cart
+                                    span مبلغ کل پرداخت
+                                    span 1,258,974 تومان
+                            
+                            a.cart-summary__button-next(href="cart2.html")  ادامه فرآیند خرید 
+                                            
+                        
+    //footer
+block footer
+    include partials/footer/_footer
+
+        

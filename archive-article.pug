@@ -1,0 +1,18 @@
+extends partials/_layout
+block header
+    include partials/header/_header
+    include partials/_pallet
+block content
+    include partials/_breadcrumb
+    section.articlepage
+        .container 
+            .row
+                h1.titles
+                    | مقالات
+                include partials/_article-items
+                include partials/_article-items
+            include partials/_pagination                        
+ 
+block footer
+    include partials/footer/_footer                  
+                        

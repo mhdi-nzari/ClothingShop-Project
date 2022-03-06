@@ -1,0 +1,130 @@
+
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="filter-box-modal">
+      <div class="close-modal">
+        <button class="filter-box-modal__close" type="button" data-dismiss="modal"><span class="icon-cancel-circle"></span></button>
+      </div>
+      <div class="filter-search mt-3"><span class="filter-search__label">جستجو :</span>
+        <div class="filter-search__form my-2">
+          <div class="form-field">
+            <input class="form-control" type="text" placeholder="اینجا جستجو کنید..."/>
+          </div>
+          <button class="filter-search__submit" type="button"><span class="icon-search"></span></button>
+        </div>
+      </div>
+      <div class="filter-accordion" id="main-accordion">
+        <div class="filter-accordion__item">
+          <h5 class="filter-accordion__header">
+            <button class="filter-accordion__button collapsed" data-toggle="collapse" data-target="#group-collapse-d1" aria-expanded="false">فیلتر براساس ناشر</button><span class="icon-angle-down filter-accordion__icon">         </span>
+          </h5>
+          <div class="collapse show" id="group-collapse-d1" data-parent="#main-accordion">
+            <div class="row">
+              <div class="col-12 filter-accordion__body-item">
+                <div class="checkbox bounce">
+                  <input type="checkbox" id="input_6"/>
+                  <svg viewBox="0 0 21 21">
+                    <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                  </svg>
+                </div>
+                <label class="checkbox-label" for="input_6">پاشا باغچه            </label>
+              </div>
+              <div class="col-12 filter-accordion__body-item">
+                <div class="checkbox bounce">
+                  <input id="input_7" type="checkbox"/>
+                  <svg viewBox="0 0 21 21">
+                    <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                  </svg>
+                </div>
+                <label class="checkbox-label" for="input_7">پاشا باغچه           </label>
+              </div>
+              <div class="col-12 filter-accordion__body-item">
+                <div class="checkbox bounce">
+                  <input id="input_8" type="checkbox"/>
+                  <svg viewBox="0 0 21 21">
+                    <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                  </svg>
+                </div>
+                <label class="checkbox-label" for="input_8">پاشا باغچه           </label>
+              </div>
+              <div class="col-12 filter-accordion__body-item">
+                <div class="checkbox bounce">
+                  <input id="input_9" type="checkbox"/>
+                  <svg viewBox="0 0 21 21">
+                    <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                  </svg>
+                </div>
+                <label class="checkbox-label" for="input_9">پاشا باغچه      </label>
+              </div>
+              <div class="col-12 filter-accordion__body-item">
+                <div class="checkbox bounce">
+                  <input id="input_10" type="checkbox"/>
+                  <svg viewBox="0 0 21 21">
+                    <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                  </svg>
+                </div>
+                <label class="checkbox-label" for="input_10">پاشا باغچه</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-accordion__item">
+          <h5 class="filter-accordion__header">
+            <button class="filter-accordion__button collapsed" data-toggle="collapse" data-target=".group-collapse-range" aria-expanded="false">رنج قیمت<span class="icon-angle-down filter-accordion__icon">            </span></button>
+          </h5>
+          <div class="group-collapse-range collapse" data-parent="#main-accordion">
+            <div class="p-0 slider-range-box">
+              <input class="demo_3 text-hide" type="text" name="demo_3" value="" tabindex="-1" readonly=""/>
+            </div>
+          </div>
+        </div>
+        <div class="filter-accordion__item">
+          <h5 class="filter-accordion__header">
+            <button class="filter-accordion__button collapsed" data-toggle="collapse" data-target="#collapse-color1" aria-expanded="false">رنگ بندی<span class="icon-angle-down filter-accordion__icon"></span></button>
+          </h5>
+          <div class="collapse" id="collapse-color1" role="tabpanel" data-parent="#main-accordion">
+            <form class="color">
+              <fieldset class="color__field">
+                <div>
+                  <input class="color__input" id="green" type="checkbox"/>
+                  <label class="color__label" data-toggle="tooltip" data-placement="top" title="green" for="green"><span></span></label>
+                </div>
+                <div>
+                  <input class="color__input" id="lightgreen" type="checkbox"/>
+                  <label class="color__label" data-toggle="tooltip" data-placement="top" title="lightgreen" for="lightgreen"><span></span></label>
+                </div>
+                <div>
+                  <input class="color__input" id="darkgreen" type="checkbox"/>
+                  <label class="color__label" data-toggle="tooltip" data-placement="top" title="darkgreen" for="darkgreen"><span></span></label>
+                </div>
+              </fieldset>
+            </form>
+            <div class="moreitem"></div>
+            <div class="in collapse" id="more-filter">
+              <form class="color"></form>
+              <fieldset class="color__field">
+                <div>
+                  <input class="color__input" id="yellow" type="checkbox"/>
+                  <label class="color__label" data-toggle="tooltip" data-placement="top" title="yellow" for="yellow"><span></span></label>
+                </div>
+                <div>
+                  <input class="color__input" id="orange" type="checkbox"/>
+                  <label class="color__label" data-toggle="tooltip" data-placement="top" title="orange" for="orange"><span></span></label>
+                </div>
+                <div>
+                  <input class="color__input" id="teal" type="checkbox"/>
+                  <label class="color__label" data-toggle="tooltip" data-placement="top" title="teal" for="teal"><span></span></label>
+                </div>
+              </fieldset>
+            </div><a class="more-button up-down collapsed" href="#more-filter" data-toggle="collapse" aria-expanded="false">نمایش بیشتر</a>
+          </div>
+        </div>
+      </div>
+      <div class="filter-switch my-4">
+        <label class="toggle-control">
+          <input type="checkbox" checked="checked"/><span class="control"></span>فقط کالاهای موجود
+        </label>
+      </div>
+    </div>
+  </div>
+</div>

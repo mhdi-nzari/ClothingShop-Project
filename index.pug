@@ -1,0 +1,64 @@
+extends partials/_layout
+
+block headStyle
+    link(rel='stylesheet' href='dist/styles/index.min.css')
+    link(rel='stylesheet' href='styles/index.css')
+block header
+    include partials/header/_header
+    include partials/_pallet
+block content
+    include partials/index/_slider
+    include partials/index/_products
+        //- include partials/index/_pro-fertilizer
+    include partials/index/_categorry
+    section.title
+        .container-fluid
+            .row 
+                .col-12
+                    .section-title-container
+                        .right_item
+                            i.icon-heart
+                            h3.section_title محبوب ترین محصولات
+                        a(href="javascript:void(0)").left_item
+
+                            span.see_all مشاهده همه
+                            i.icon-chevron-left
+    include partials/index/_most_popular
+    section.title
+        .container-fluid
+            .row 
+                .col-12
+                    .section-title-container
+                        .right_item
+                            i.icon-diamond
+                            h3.section_title جدید ترین محصولات
+                        a(href="javascript:void(0)").left_item
+
+                            span.see_all مشاهده همه
+                            i.icon-chevron-left
+    include partials/index/_newest
+    include partials/index/_sponser
+    //- you can view above css file in _box.scss
+
+        //- include partials/index/_pro-seeds
+        //- include partials/index/_pro-tools
+    section.title
+        .container-fluid
+            .row 
+                .col-12
+                    .section-title-container
+                        .right_item
+                            i.icon-newspaper
+                            h3.section_title مقالات
+                        a(href="javascript:void(0)").left_item
+
+                            span.see_all مشاهده همه
+                            i.icon-chevron-left
+    include partials/index/_article
+block footer
+    include partials/footer/_footer
+block scripts
+    script(src='dist/scripts/owl.carousel.min.js')
+
+
+

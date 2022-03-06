@@ -1,0 +1,168 @@
+.one {
+    position: absolute;
+    top: -30%;
+    width: 53%;
+    right: -17%;
+}
+
+.two {
+    position: absolute;
+    top: 10px;
+    width: 9%;
+    left: 5%;
+}
+
+.three {
+    position: absolute;
+    top: 0px;
+    width: 5%;
+    left: 65%;
+}
+
+.four {
+    position: absolute;
+    top: 59%;
+    width: 24%;
+    right: 65%;
+}
+
+.five {
+    position: absolute;
+    bottom: 48px;
+    width: 12%;
+    left: 65%;
+}
+
+.six {
+    position: absolute;
+    top: 125px;
+    width: 2%;
+    left: 29%;
+}
+
+.seven {
+    position: absolute;
+    bottom: 1%;
+    width: 7%;
+    left: 82%;
+}
+
+.not-found-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.not-found img {
+    width: 30vw;
+    height: 40vh;
+}
+
+.not-found p {
+    font-family: IRANSans;
+    margin-top: 4rem;
+    font-size: 1.8rem;
+}
+
+.not-found .simple-btn {
+    // font-family: IRANSans;
+    background-color: $color-base !important;
+    border: 1px solid $color-base !important;
+    color: white !important;
+    font-size: 1.4rem;
+    -webkit-transition: 300ms ease-out;
+    -moz-transition: 300ms ease-out;
+    -o-transition: 300ms ease-out;
+    transition: 300ms ease-out;
+}
+
+.not-found .simple-btn:hover {
+    background-color: #f9dbde !important;
+    border-color: #f9dbde !important;
+    @media (max-width: 992px) {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .one {
+        top: -14%;
+    }
+    .seven {
+        bottom: 9%;
+        left: 87%;
+    }
+    .four {
+        top: auto;
+        bottom: -12%;
+        width: 27%;
+    }
+    .not-found p {
+        margin-top: 2rem;
+        font-size: 1.4rem;
+    }
+    .not-found img {
+        width: 35vw;
+        height: 30vh;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .one {
+        top: -6%;
+    }
+    .three {
+        top: 6%;
+        left: 60%;
+    }
+    .seven {
+        bottom: 22%;
+        left: 89%;
+    }
+    .four {
+        top: auto;
+        bottom: -6%;
+        width: 32%;
+        right: 62%;
+    }
+    .not-found p {
+        margin-top: 2rem;
+        font-size: 1.3rem;
+    }
+    .not-found img {
+        width: 35vw;
+        height: 30vh;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .one {
+        top: -3%;
+        right: -20%;
+    }
+    .three {
+        top: 14%;
+        width: 8%;
+        left: 54%;
+    }
+    .seven {
+        bottom: 113px;
+    }
+    .four {
+        top: auto;
+        bottom: -6%;
+        width: 34%;
+        right: 60%;
+    }
+    .not-found p {
+        margin-top: 0.5rem;
+        font-size: 1.1rem;
+    }
+    .not-found img {
+        width: 35vw;
+        height: 30vh;
+    }
+}

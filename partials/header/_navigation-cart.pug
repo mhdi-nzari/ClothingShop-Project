@@ -1,0 +1,38 @@
+//navigation-cart
+- var info = [{img:'dist/images/product/01.jpg' ,title:'سویشرت'},{img:'dist/images/product/02.jpg' ,title:'شلوار'},{img:'dist/images/product/03.jpg' ,title:'لباس تابستانی'},{img:'dist/images/product/04.jpg' ,title:'شلوارک'}]
+
+mixin cart(img ,title)
+	li.shop__list-item
+		a(href="#").shop__list-img-wrapper
+			//67*67
+			img.shop__list-img(src=img alt="pic")
+		.shop__info
+			a.shop__info-title(href="#")
+				p=title
+			span.shop__info-price 5,962,000 تومان
+			div.discount
+				span.discount__tag 10%
+				span.discount__real-price 4,000,000
+			span.shop__info-quantity 2 عدد
+		a.shop__list-delete
+			span.icon-trash
+a#navigation-cart.access-style.shop-cart(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+	i.shop-cart__icon.icon-shopping-cart
+	span.shop-cart__cartNumber 25
+.dropdown-menu.shop(aria-labelledby="navigation-cart")
+	.shop__header
+		a(href="javascript:void(0)") 
+			i.icon-multiply
+		span.shop__header-title (25 کالا) سبد شما
+		a.shop__header-more(href="cart1.html") مشاهده ی سبد خرید
+			span.shop__header-icon.icon-angle-left
+	ul.shop__list
+		each cart in info
+			+cart(cart.img, cart.title)
+
+	.shop__footer
+		a.shop__footer-btn(href='cart1.html') تسویه حساب
+		.shop__footer-subtotal
+			p.shop__footer-text مبلغ قابل پرداخت
+			span.shop__footer-price 25,378,000
+			p.shop__footer-text تومان

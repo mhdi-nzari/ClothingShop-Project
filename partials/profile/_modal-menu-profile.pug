@@ -1,0 +1,31 @@
+#profileModal.modal.fade(tabindex="-1" role="dialog").profile-modal
+	.modal-dialog.p-5(role="document")
+		.modal-content
+			.modal-header
+				h5#exampleModalLabel1.profile-modal__title
+					| حساب کاربری من
+				button.close.profile-modal__close(type="button" data-dismiss="modal" aria-label="Close")
+					span(aria-hidden="true") ×
+			.modal-body
+				.user-profile-header
+					.user-profile-header__box-img
+						input#img-edit(type="file" hidden="")
+						label.user-profile-header__edit(for="img-edit")
+							img(src="dist/images/img-user.jpg" alt="pic").user-profile-header__img
+					.user-profile-header__box-text
+						.user-profile-header__name
+							span علیرضا حاجی قدیری
+						.user-profile-header__box-link
+							a(href="profile-password.html").user-profile-header__link
+								| تغییر رمز عبور
+							a(href="#").user-profile-header__link
+								| خروج از حساب
+				.user-profile-menu
+					a.user-profile-menu__item.user-profile-menu__item--active(href="profile.html")
+						| ویرایش پروفایل شخصی
+					a.user-profile-menu__item(href="profile-address.html")
+						| دفترچه آدرس های من
+					a.user-profile-menu__item(href="profile-order.html")
+						| همه سفارش های من
+					a.user-profile-menu__item(href="profile-favorite.html") علاقه مندی های من
+				

@@ -1,0 +1,54 @@
+header
+	//- section.top-head
+		.container 
+			.row
+				.col-6.nav-social 
+					ul.nav-social__list 
+						li.nav-social__item 
+							a.nav-social__link.icon-telegram(href="") 
+						li.nav-social__item 
+							a.nav-social__link.icon-whatsapp(href="") 
+						li.nav-social__item 
+							a.nav-social__link.icon-instagram(href="") 
+						li.nav-social__item 
+							a.nav-social__link.icon-facebook(href="") 
+				.col-6.top-access 
+					.top-access__email-wrapper.d-sm-flex.d-none
+						span.top-access__email-icon.icon-envelope
+						p.top-access__email-text info@keshavarzi.com 
+
+					ul.user
+						li.user__item
+							button.user__logs(type='button' data-toggle='modal' data-target='.login') ورود				
+						li.user__item /
+						li.user__item
+							button.user__logs(type='button' data-toggle='modal' data-target='.login') عضویت
+
+						// li.user__item
+						// 	a.user__panel.user__logs(href='profile.html')
+						// 		span.user__icon.icon-user
+						// 		span.user__title تهمینه غلامیان
+						// li.user__item
+						// 	a.user__panel.user__logs(href='profile.html')
+						// 		span.user__icon.icon-logout
+						// 		span.user__title خروج
+	section.fixed-nav
+		.container-fluid
+			.row
+				.col-4.col-lg-2.logo.order-1.order-lg-0
+					h1
+						a(href='index.html')
+							img(src='dist/images/content/logo.png' alt="کشاورزی")
+				.hamburger
+					ul.hamburger-box
+						li
+						li
+						li
+				.col-4.col-lg-5.order-0.order-lg-1.d-flex
+					include _navbar
+				include _accessibility-items
+				.col-lg-4.order-lg-2.d-none.d-lg-block
+					.search_tunnel
+						input.search_box(type="text" placeholder=" جستجو محصول , برند یا هر چیز دیگر ...")
+						a(href="javascript:void(0)") 	
+							i.icon-search.icon-box

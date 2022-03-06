@@ -1,0 +1,102 @@
+.profile-cart
+    .profile-cart__header آدرس های ثبت شده
+    .table-responsive.address
+        .address-card
+            ul.address-card__list
+                li.address-card__item
+                    span.address-card__icon.icon-map
+                    |  تهران، تهران، فرودگاه مهرآباد، پلاک ۲۲، واحد ۲
+                li.address-card__item
+                    span.address-card__icon.icon-phone-ring
+                    | 55578350
+                li.address-card__item
+                    span.address-card__icon.icon-mobile
+                    | 09132457899
+                li.address-card__item
+                    span.address-card__icon.icon-envelope
+                    | 1256455555
+            .address-card__edit
+                a.address-card__edit-item(href="#" data-toggle="modal" data-target=".address-modal")
+                    span.icon-edit.address-card__edit-icon(data-toggle="tooltip" data-placement="bottom" title="" data-original-title="ویرایش آدرس")
+                    | ویرایش آدرس 
+                a.address-card__edit-item.delete-address(href="#")
+                    span.icon-trash.address-card__edit-icon(data-toggle="tooltip" data-placement="top" title="" data-original-title="حذف این آدرس")
+                    | حذف آدرس
+        .address-card
+            ul.address-card__list
+                li.address-card__item
+                    span.address-card__icon.icon-map
+                    |  تهران، تهران، فرودگاه مهرآباد، پلاک ۲۲، واحد ۲
+                li.address-card__item
+                    span.address-card__icon.icon-phone-ring
+                    | 55578350
+                li.address-card__item
+                    span.address-card__icon.icon-mobile
+                    | 09132457899
+                li.address-card__item
+                    span.address-card__icon.icon-envelope
+                    | 1256455555
+            .address-card__edit
+                a.address-card__edit-item(href="#" data-toggle="modal" data-target=".address-modal")
+                    span.icon-edit.address-card__edit-icon(data-toggle="tooltip" data-placement="bottom" title="" data-original-title="ویرایش آدرس")
+                    | ویرایش آدرس 
+                a.address-card__edit-item.delete-address(href="#")
+                    span.icon-trash.address-card__edit-icon(data-toggle="tooltip" data-placement="top" title="" data-original-title="حذف این آدرس")
+                    | حذف آدرس
+    // MODAL ADDRESS EDIT
+    .address-modal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="address-modal" aria-hidden="true")
+        .modal-dialog(role="document")
+            .modal-content
+                .modal-header.align-items-center
+                    h5#address-modal.address-modal__title
+                        | ویرایش آدرس
+                    button.close.address-modal__close(type="button" data-dismiss="modal" aria-label="Close")
+                        span(aria-hidden="true") ×
+                .modal-body
+                    include _profile-address-modal
+                
+    .col-12
+        .contentTitle
+            p.title-greybackground افزودن آدرس جدید
+            
+        form#validate-form.form-card
+            .row.m-0
+                .col-12.col-md-6.form-card__field
+                    label(for="phone").form-card__label تلفن ثابت
+                    input(type="text" required="" name="phone" placeholder=" تلفن ثابت")#phone.form-card__input
+                    
+                .col-12.col-md-6.form-card__field
+                    label(for="mobile").form-card__label تلفن همراه
+                    input(type="text" required="" name="mobile" placeholder="تلفن همراه")#mobile.form-card__input
+                    
+                .col-12.col-md-6.form-card__field                          
+                    .mySelectOption
+                        label.form-card__label موضوع
+                        .mySelectOption__wrapper
+                            .select
+                                span بخض مورد نظر خود را انتخاب کنید...
+                                i.icon-angle-left
+                            input(type='hidden' name='gender')
+                            ul.dropdown-menu
+                                li#male مدیریت
+                                li#female فروش
+                .col-12.col-md-6.form-card__field                            
+                    .mySelectOption
+                        label.form-card__label موضوع
+                        .mySelectOption__wrapper
+                            .select
+                                span بخض مورد نظر خود را انتخاب کنید...
+                                i.icon-angle-left
+                            input(type='hidden' name='gender')
+                            ul.dropdown-menu
+                                li#malee مدیریت
+                                li#femalee فروش
+                .col-12.col-md-6.form-card__field
+                    label(for="postal-code").form-card__label کدپستی
+                    input(type="text" required="" name="postalcode" placeholder="کدپستی")#postal-code.form-card__input
+                .col-12.col-md-6.form-card__field
+                    label(for="address").form-card__label.form-card__label-textarae آدرس
+                    textarea(type="text" rows="5" required="" name="address" placeholder="آدرس خود رو بنویسید")#address.form-card__input
+                .col-12.form-card__button
+                    button.mx-2(type="submit") ثبت
+                    button.mx-2.ghost(type="submit") انصراف

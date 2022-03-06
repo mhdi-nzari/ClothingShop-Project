@@ -1,0 +1,75 @@
+extends partials/_layout
+
+block headStyle
+	link(rel='stylesheet', href='dist/styles/profileCart.css')
+	link(rel='stylesheet', href='styles/profileCart.css')
+block header
+	include partials/cart/_cart-header
+	include partials/_pallet
+block content
+	.container.py-5
+		.checkout-wrap   
+			ul.d-lg-flex.d-none.checkout-bar
+				li.visited.first
+					a.checkout-steps__item-link.checkout-steps__item(href="cart2.html" data-title="مشخصات کاربر")
+				li.visited
+					a.checkout-steps__item-link.checkout-steps__item(data-title="اطلاعات آدرس" href="cart3.html")
+				li.visited
+					a.checkout-steps__item-link.checkout-steps__item(data-title="روش ارسال" href="cart4.html")
+				li.visited
+					a.checkout-steps__item-link.checkout-steps__item(data-title="روش پرداخت" href="cart5.html")    
+				li.last
+					a.checkout-steps__item.checkout-steps__item--payment(data-title="اتمام خرید و بازبینی")
+		// سبد خرید
+		.row
+			.col-12.col-lg-8
+				.profile-cart
+					.profile-cart__header
+						span انتخاب روش پرداخت
+					.payment
+						p.payment__title پرداخت آنلاین با بانک :
+						.payment__methods-list
+							.payment__method
+								label.payment__label
+									input.payment__input(type="radio" name="meli" value="meli" )
+									img.payment__img(src="dist/images/content/b1.png")
+									|بانک ملی
+							.payment__method
+								label.payment__label
+									input.payment__input(type="radio" name="meli" value="meli" )
+									img.payment__img(src="dist/images/content/b2.png")
+									|بانک سرمایه							
+							.payment__method
+								label.payment__label
+									input.payment__input(type="radio" name="meli" value="meli" )
+									img.payment__img(src="dist/images/content/b3.png")
+									|بانک پارسیان
+						.col-12.txt.p-4
+							label
+								| چنانچه ملاحظاتی مد نظر دارید
+								b ( از قبیل ساعت تحویل )
+								|  در کادر زیر درج فرمایید:
+								
+							textarea.form-control(rows='5')
+						.clearfix
+			.col-12.col-lg-4.mt-4.mt-lg-0
+				.profile-cart
+					.profile-cart__header خلاصه سبد خرید
+					.cart-summary
+						.cart-summary__price
+							.cart-summary__item
+									span قیمت (3 مورد)
+									span 658,974 تومان
+							.cart-summary__item
+									span هزینه ارسال
+									span وابسته به شهر
+						.cart-summary__subtotal
+							.cart-summary__price-cart
+									span مبلغ کل پرداخت
+									span 1,258,974 تومان
+			
+						a.cart-summary__button-next(href="cart6.html")  ادامه فرآیند خرید 
+						a.cart-summary__button-back(href="cart4.html")  بازگشت به مرحله قبل
+
+   
+				

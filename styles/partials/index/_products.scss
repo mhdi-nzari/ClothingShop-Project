@@ -1,0 +1,109 @@
+// .product {
+//     margin-top: 30px;
+//     position: relative;
+//     .row {
+//         @media (max-width: 757.98px) {
+//             justify-content: center;
+//         }
+//     }
+//     &:before {
+//         content: '';
+//         position: absolute;
+//         top: -55px;
+//         left: 0;
+//         right: 0;
+//         z-index: 10;
+//         height: 26px;
+//         background: url(../images/content/bg-top.png) center center no-repeat;
+//         background-size: cover;
+//     }
+//     &__wrapper {
+//         padding: 15px 20px;
+//         @media (max-width: 991.98px) {
+//             padding: 15px 0px;
+//         }
+//         &:hover {
+//             .product__title {
+//                 color: $color-base-hover;
+//             }
+//             .Product__first {
+//                 opacity: 0;
+//             }
+//             .product__second {
+//                 opacity: 1;
+//             }
+//         }
+//     }
+//     &__img {
+//         width: 110px;
+//         @include transition();
+//         min-height: 100px;
+//     }
+//     &__link {
+//         @include flexcolumn-center;
+//     }
+//     &__first {
+//         opacity: 1;
+//     }
+//     &__second {
+//         opacity: 0;
+//         position: absolute;
+//     }
+//     &__title {
+//         margin-top: 2rem;
+//         font-size: 2.9rem;
+//         font-weight: bold;
+//         color: $color-base;
+//         text-align: center;
+//         font-family: Casablanca;
+//         @include transition();
+//     }
+//     &__content {
+//         margin-top: 1.5rem;
+//         font-weight: 500;
+//         font-size: 1.45rem;
+//         text-align: justify;
+//         color: #444;
+//         line-height: 2;
+//         padding: 0 20px;
+//         @include linetext(2);
+//         @media (max-width: 991.98px) {
+//             padding: 0px 0px;
+//         }
+//         @media (max-width: 575.98px) {
+//             padding: 0px 65px;
+//         }
+//         @media (max-width: 380.98px) {
+//             padding: 0px 35px;
+//         }
+//     }
+// }
+
+section.branding {
+  transform: translateY(-50px);
+  margin: 0px 200px;
+  background: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  @media screen and(min-width:576px ) and(max-width:768px) {
+    margin: 0px 100px;
+  }
+
+  @media screen and(max-width:576px) {
+    transform: translateY(0px);
+    margin: 50px 15px 0px 15px;
+  }
+  .owl-branding {
+    .item {
+      padding: 20px 0px;
+    }
+    .brand_link img {
+      width: 100%;
+      @include transition;
+      opacity: 0.4;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

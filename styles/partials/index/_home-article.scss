@@ -1,0 +1,84 @@
+.article {
+    padding: 10px;
+    &__items {
+        background-color: white;
+        border: 1px solid transparent;
+        @include transition();
+        @include border-radius();
+        @include flexrow-center;
+        border-color: #ececec;
+        @include box-shadow(0 1px 3px rgba(116, 116, 116, 0.28));
+        @media (min-width: 480px)and(max-width: 767.98px) {
+            flex-direction: row;
+        }
+        @media (max-width: 479.98px) {
+            width: 77%;
+            flex-direction: column;
+            margin: auto;
+        }
+    }
+    &__img-wrapper {
+        height: auto;
+        padding: 15px;
+    }
+    &__date {
+        color: rgb(187, 187, 187);
+        font-size: 1.3rem;
+    }
+    &__img {
+        width: 100%;
+        height: auto;
+        @include border-radius(0 7px 7px 0);
+    }
+    .media-body {
+        padding: 0 8px;
+    }
+    &__title {
+        font-size: 1.7rem;
+        line-height: 2;
+        font-weight: 600;
+        margin: 10px 0 3px 0px;
+        color: $color-base;
+        @include linetext(1);
+        @include transition();
+    }
+    &__content {
+        font-size: 1.4rem;
+        line-height: 1.8;
+        color: #444;
+        text-align: justify;
+        padding-left: 15px;
+        @include linetext(3);
+    }
+    &__button {
+        background-color: transparent;
+        color: $color-base;
+        justify-content: flex-end;
+        display: flex;
+        font-size: 1.35rem;
+        padding: 5px 15px;
+        margin-bottom: 1.5rem;
+        @include transition();
+        @include d-flex;
+        align-items: center;
+    }
+    &__icon {
+        opacity: 0;
+        font-size: 1rem;
+        margin-right: 7px;
+        @include transition();
+    }
+    &:hover {
+        .article__items {
+            @include box-shadow(0 1px 6px rgba(116, 116, 116, 0.3));
+        }
+        .article__icon,
+        .article__button,
+        .article__title {
+            color: $color-base-hover;
+        }
+        .article__icon {
+            opacity: 1;
+        }
+    }
+}

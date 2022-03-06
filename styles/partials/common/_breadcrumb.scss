@@ -1,0 +1,70 @@
+.inner-banner {
+    @include d-flex;
+    align-items: center;
+    margin-top: 90px;
+    margin-bottom: 2.5rem;
+    @media (max-width: 767.98px) {
+        margin-bottom: 3rem;
+    }
+    .breadcrumb-flex {
+        @include d-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        @media (max-width: 767.98px) {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+    }
+}
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.75rem 0rem 0.75rem 0rem;
+    margin-bottom: 0;
+    list-style: none;
+    background-color: transparent;
+    font-size: 1rem;
+    @media (max-width: 767.98px) {
+        padding-right: 0;
+    }
+    &__icon {
+        padding-left: 3px;
+    }
+    &__item {
+        &:first-child {
+            &::before {
+                content: none;
+            }
+        }
+        &::before {
+            content: "/";
+            color: $color-base;
+            font-size: 1.1rem;
+        }
+        &.active {
+            color: $color-second;
+            font-size: 1.4rem;
+        }
+    }
+    &__link {
+        color: $color-base;
+        font-size: 1.4rem;
+        @include transition();
+        &:hover {
+            color: $color-second;
+        }
+    }
+}
+
+.breadcrumb__item+.breadcrumb__item {
+    padding-left: 0rem;
+    &::before {
+        display: inline-block;
+        padding-right: 0.5rem;
+        padding-left: .5rem;
+        color: $color-base;
+    }
+}

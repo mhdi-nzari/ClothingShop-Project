@@ -1,0 +1,17 @@
+.gallery {
+    @include border-radius();
+    margin-bottom: 3rem;
+    @include box-shadow(0 1px 4px #303030ad);
+    &__img {
+        width: 100%;
+        height: auto;
+        @include border-radius();
+        @include transition();
+    }
+    &:hover {
+        .gallery__img {
+            transform: scale(1.02);
+            box-shadow: none;
+        }
+    }
+}
